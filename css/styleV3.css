@@ -1,0 +1,224 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+    font-family: 'Acme', sans-serif;
+}
+
+.clear-both{
+    clear: both;
+}
+
+/* ********************************************* NAVBAR **********************************************/
+
+#navBar{
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    height: 49px;
+}
+
+#navBar ul{
+    list-style-type: none;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+    /*
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    */
+}
+
+#navBar li{
+    float:left;
+}
+
+#navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navBar li a:hover{
+    background-color: #111;
+}
+
+#navBar-logo{
+    height: 43px;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+#navBar-logo img{
+    width: 43px;
+}
+
+#navBar-corazon{
+    float: right !important;
+    height: 47px;
+    margin-top: 1px;
+    border-radius: 50%;
+}
+
+#navBar-corazon img{
+    width: 47px;
+}
+
+#navBar-corazon:hover{
+    background-color: #111;
+}
+
+/*
+.imgNavBar img{
+    width: 42px; 
+    margin-top: 3px;
+
+    background-color: antiquewhite;
+}
+
+.imgNavBar{
+    margin: 0px 20px ;
+}
+
+#imgCorazon{
+    float: right !important;
+
+    background-color: aqua;
+}
+
+#imgCorazon:hover{
+    background-color: black;
+}
+
+*/
+
+.botonActivo{
+    background-color: #4CAF50;
+}
+
+
+/* ********************************************* BODY **********************************************/
+#content{
+    width: 1000px;
+    margin: 0 auto;
+    height: max-content;
+
+    /*
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    */
+}
+
+.ajusteDeEnlace{
+    width: 1000px;
+    height: 70px;
+    border-bottom: 1px solid grey;
+
+    background-color: aliceblue;
+}
+
+.bodySection{
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+
+
+/* ************** ABOUT-ME SECTION ************** */
+h1{
+    text-align: center;
+    color:  #fff;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+
+#my-photo{
+    width: 280px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#aboutme-description{
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px grey;
+}
+
+#description-text{
+    width: 580px;
+    height: max-content;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* ************** PROJETS SECTION ************** */
+
+
+/* ************** SKILLS SECTION ************** */
+
+/* ************** CONTACT SECTION ************** */
+#logo-grande{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+#contactBar{
+    margin-top: 20px;
+    width: 1000px;  
+}
+
+#contactBar ul{
+    list-style-type: none;
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#contactBar li {
+    float: left;
+    margin-right: 70px;
+}
+
+#contactBar li a{
+    display: block;
+    padding: 7px 7px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px grey, 0px -1px 5px grey
+}
+
+#contactBar li a:hover{
+    background-color: rgba(51,51,51,.2);
+}
+
+.contactImg{
+    width: 60px;
+}
+
+.noMarginRight{
+    margin-right: 0px !important;
+}
+
