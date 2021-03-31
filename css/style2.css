@@ -1,4 +1,23 @@
-/* ********************************************* NAVBAR **********************************************/
-#navBar-logo{
-    width: 40px;
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+    font-family: 'Acme', sans-serif;
+    background-color: #e7e7e7;
+}
+
+.nav-item{
+    font-size: 18px;
+}
+
+#pageContent{
+    margin-top: 80px;
+}
+
+#descripcionPerfil{
+    margin-top: 20px;
+    border-radius: 20px;
 }
