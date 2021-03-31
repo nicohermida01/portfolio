@@ -18,13 +18,16 @@
         <link rel="stylesheet" type="text/css" href="css/style2.css">
 
         <title>I am Nico Hermida</title>
+        <link rel="shortcut icon" href="imagenes/Logo.png">
+
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
         <!-- *************************************************** NAVBAR *************************************************** -->
         <nav id="navBar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="">
                     <img id="navBar-logo" src="imagenes/Logo.png" alt="" width="40">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,15 +38,15 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <!-- Navbar Inicio -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <!-- Navbar Proyectos -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Proyectos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">ScrabbleAr</a></li>
+                                <li><a class="dropdown-item" href="#scrabble">ScrabbleAr</a></li>
                                 <li><a class="dropdown-item" href="#">...</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Trabajando en más..</a></li>
@@ -51,11 +54,11 @@
                         </li>
                         <!-- Navbar Conocimientos -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conocimientos</a>
+                            <a class="nav-link" href="#conocimientos">Conocimientos</a>
                         </li>
                         <!-- Navbar Contacto -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -63,35 +66,69 @@
         </nav>
         
         <!-- *************************************************** BODY *************************************************** -->
-        <div class="container" id="pageContent">
+        <div class="container">
             
             <!-- ************** INICIO ************** -->
-            <div class="row justify-content-center" id="inicio">
-                <div class="col text-center">
-                    <h1>Hi, I am Nico hermida</h1>
-                    <a href="#"><img src="imagenes/img-portada.jpg" alt="" class="rounded-circle" width="270"></a>
-                    
-                    <!-- Descripcion -->
-                    <div class="card text-center shadow-lg p-3 mb-5 bg-body" id="descripcionPerfil">
-                        <div class="card-header rounded-3">
-                            <span class="float-start"><i class="fas fa-angle-double-up"></i></span>
-                            Sobre mi
+            <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="inicio">
+                <h1 class="text-center h1">Hi, I am Nico Hermida</h1>
+                <a href="#"><img src="imagenes/img-portada.jpg" alt="" class="rounded-circle mx-auto d-block" width="270"></a>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <!-- Descripcion -->
+                        <div class="card text-center shadow p-0 mb-5 bg-body" id="descripcionPerfil">
+                            <div class="card-header top-redondeado">
+                                <span class="float-start"><i class="fas fa-code"></i></span>
+                                Sobre mi
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">Hola! Me llamo Nicolás Hermida.<br>Soy un desarrollador de software argentino de 21 años.<br>
+                                    Actualmente estoy estudiando "Licenciatura en Sistemas" en la Universidad Nacional de La Plata (UNLP)<br>
+                                    Ademas del desarrollo de software, me gusta mucho el deporte y el diseño.<br>
+                                    Más abajo podrás ver algunos de mis proyectos y cómo contactarme. <br>
+                                    Un gusto conocerte!
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">Hola! Me llamo Nicolás Hermida.<br>Soy un desarrollador de software argentino de 21 años.<br>
-                                Actualmente estoy estudiando "Licenciatura en Sistemas" en la Universidad Nacional de La Plata (UNLP)<br>
-                                Ademas del desarrollo de software, me gusta mucho el deporte y el diseño.<br>
-                                Más abajo podrás ver algunos de mis proyectos y cómo contactarme. <br>
-                                Un gusto conocerte!
-                            </p>
-                        </div>
-                    </div>           
+                    </div>
                 </div>
             </div>
 
             <!-- ************** PROYECTOS ************** -->
+            <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="proyectos">
+                <h2 class="text-center h2">Mis proyectos</h2>
 
+            </div>
 
+            <!-- ************** CONOCIMIENTOS ************** -->
+            <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="conocimientos">
+                <h2 class="text-center h2">Mis Conocimientos</h2>
+
+            </div>
+
+            <!-- ************** CONTACTO ************** -->
+            <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="contacto">
+                <h2 class="text-center h2">Contacto</h2>
+
+            </div>
+        </div>
+
+        <!-- ************** FOOTER ************** -->
+        <div class="container-fluid" id="footer1">
+            <div class="container">
+                <img src="imagenes/Logo.png" alt="" width="250" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+
+        <div class="container-fluid" id="footer2">
+            <div class="container">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-white-50 ">Hecho con &nbsp<i class="far fa-heart"></i>&nbsp by Nico Hermida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Bootstrap Module -->

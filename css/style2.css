@@ -13,11 +13,31 @@ body{
     font-size: 18px;
 }
 
-#pageContent{
+#inicio{
     margin-top: 80px;
 }
 
 #descripcionPerfil{
     margin-top: 20px;
     border-radius: 20px;
+}
+
+.top-redondeado{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.seccion-redondeada{
+    border-radius: 10px;
+}
+
+#footer1{
+    background-color: #343A40;
+}
+
+#footer2{
+    background-color: #212529;
+}
+#footer2 div{ 
+    background-color: #212529;
 }
