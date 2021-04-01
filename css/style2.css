@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 body{
@@ -9,10 +9,18 @@ body{
     background-color: #e7e7e7;
 }
 
+/* NAVBAR */
 .nav-item{
     font-size: 18px;
 }
 
+/* BODY */
+.seccion-redondeada{
+    border-radius: 10px;
+}
+
+
+/* INICIO */
 #inicio{
     margin-top: 80px;
 }
@@ -27,17 +35,31 @@ body{
     border-top-right-radius: 20px !important;
 }
 
-.seccion-redondeada{
-    border-radius: 10px;
+/* SCRABBLEAR */
+
+#scrabble-section{
+    margin-top: 40px;
+    border-radius: 20px;
+}
+#scrabble-section > img{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+#scrabble-descripcion{
+    font-size: 18px; 
+}
+
+/* FOOTER */
 #footer1{
     background-color: #343A40;
 }
 
+/* FOOTER 2 */
 #footer2{
     background-color: #212529;
 }
 #footer2 div{ 
     background-color: #212529;
 }
+

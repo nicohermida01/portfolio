@@ -16,7 +16,8 @@
 
         <!-- My style css -->
         <link rel="stylesheet" type="text/css" href="css/style2.css">
-
+        
+        
         <title>I am Nico Hermida</title>
         <link rel="shortcut icon" href="imagenes/Logo.png">
 
@@ -70,19 +71,19 @@
             
             <!-- ************** INICIO ************** -->
             <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="inicio">
-                <h1 class="text-center h1">Hi, I am Nico Hermida</h1>
-                <a href="#"><img src="imagenes/img-portada.jpg" alt="" class="rounded-circle mx-auto d-block" width="270"></a>
+                <h1 class="text-center h1">Hi, I'm Nico Hermida</h1>
+                <a href="#"><img src="imagenes/img-portada.jpg" alt="" class="img-fluid rounded-circle mx-auto d-block " width="270"></a>
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <!-- Descripcion -->
-                        <div class="card text-center shadow p-0 mb-5 bg-body" id="descripcionPerfil">
+                        <div class="card text-center shadow p-0 mb-5 bg-body border border-2" id="descripcionPerfil">
                             <div class="card-header top-redondeado">
                                 <span class="float-start"><i class="fas fa-code"></i></span>
                                 Sobre mi
                             </div>
                             <div class="card-body">
                                 <p class="card-text ">Hola! Me llamo Nicolás Hermida.<br>Soy un desarrollador de software argentino de 21 años.<br>
-                                    Actualmente estoy estudiando "Licenciatura en Sistemas" en la Universidad Nacional de La Plata (UNLP)<br>
+                                    Actualmente estoy en el 3er año de la carrera "Licenciatura en Sistemas" en la Facultad de Informática (UNLP).<br>
                                     Ademas del desarrollo de software, me gusta mucho el deporte y el diseño.<br>
                                     Más abajo podrás ver algunos de mis proyectos y cómo contactarme. <br>
                                     Un gusto conocerte!
@@ -97,12 +98,69 @@
             <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="proyectos">
                 <h2 class="text-center h2">Mis proyectos</h2>
 
+                <!--SCRABBLEAR -->
+                <div class="row justify-content-center" id="scrabble">
+                    <div class="col-10 shadow p-0 mb-5 bg-body border border-2" id="scrabble-section">
+                        <img class="rounded mx-auto d-block img-fluid" src="imagenes/proyects/scrabble/logo.png" alt="" width="450">
+
+                        <div class="col-8 offset-2">
+                            <div id="scrabble-pictures" class="carousel slide shadow p-1 mb-5 bg-body rounded border border-2"  data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#scrabble-pictures" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#scrabble-pictures" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#scrabble-pictures" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/proyects/scrabble/juego1.png" class="d-block w-100" alt="..." >
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/proyects/scrabble/juego2.png" class="d-block w-100" alt="..." >
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/proyects/scrabble/menu.png" class="d-block w-100" alt="..." >
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Third slide label</h5>
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#scrabble-pictures" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#scrabble-pictures" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>                             
+                        </div>
+                        <p class="text-center" id="scrabble-descripcion"> 
+                            Scrabble es un juego de mesa en el cual cada jugador intenta ganar más puntos mediante la construccion de palabras
+                            sobre un tablero. <br>
+                            "ScrabbleAr" es una adaptación de este juego de mesa llevado a forma digital. <br>
+                            Fue un trabajo final de la materia "Seminario de lenguajes (Python)" realizado con un compañero en el primer semestre del año 2020. <br>
+                            Para realizarlo se utilizo solamente el lenguaje de programación "Python". <br>                           
+                        </p>
+                        <p class="text-center"><a class="link-secondary" href="https://github.com/nicohermida01/ScrabbleAR" target="_blank" ><i class="fab fa-github"></i>&nbsp ScrabbleAr - GitHub</a></p>
+                        
+
+                    </div>
+                </div>  
             </div>
 
             <!-- ************** CONOCIMIENTOS ************** -->
             <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="conocimientos">
                 <h2 class="text-center h2">Mis Conocimientos</h2>
-
+                
             </div>
 
             <!-- ************** CONTACTO ************** -->
