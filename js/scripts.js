@@ -13,11 +13,7 @@ $("#navBar-corazon img").click(function(){
     else {
         $(this).attr("src","imagenes/corazon-megusta.png");
         meGusta = true;
+        $("#corazon-alert").removeClass("invisible");
+        $("#corazon-alert").addClass("visible");
     }
 })
-
-/* BOTONES NAVBAR */
-$(".boton").click(function(){
-    $(".boton").removeClass("botonActivo");
-    $(this).addClass("botonActivo");
-});
