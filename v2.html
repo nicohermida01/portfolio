@@ -18,7 +18,7 @@
         <script src="https://kit.fontawesome.com/f241e46f9b.js" crossorigin="anonymous"></script>
 
         <!-- My style css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/v2.css">
         
         
         <title>I'm Nico Hermida</title>
@@ -28,56 +28,41 @@
     <body>
 
         <!-- *************************************************** NAVBAR *************************************************** -->
-        <div>
-            <nav id="navBar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-                <div class="container">
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand" href="">
-                        <img id="navBar-logo" src="imagenes/Logo.png" alt="" width="40">
+        <nav id="navBar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="">
+                    <img id="navBar-logo" src="imagenes/Logo.png" alt="" width="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <!-- Inicio -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Home</a>
+                        </li>
+                        <!-- Proyectos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Projects</a>
+                        </li>
+                        <!-- Conocimientos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Skills</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Corazon -->
+                    <a class="" href="" id="navBar-corazon">
+                        <img class="img-fluid" src="imagenes/corazon-vacio.png" alt="" width="40">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Navbar content -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <!-- Inicio -->
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="">Home</a>
-                            </li>
-                            <!-- Proyectos -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Projects</a>
-                            </li>
-                            <!-- Conocimientos -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Skills</a>
-                            </li>
-                        </ul>
-                        <!-- Navbar Corazon -->
-                        <a class="" href="" id="navBar-corazon">
-                            <img class="img-fluid" src="imagenes/corazon-vacio.png" alt="" width="40">
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        
-            <!-- Carte de Me Gusta -->
-            <div class="container nav-margin fixed-top invisible" id="corazon-alert">
-                <div class="row justify-content-end">
-                    <div class="col-4">                       
-                        <div class="alert alert-info alert-dismissible fade show" role="alert">
-                            <strong>Gracias por darle me gusta a mi web!</strong><br> Espero que te hayan gustado todos mis proyectos.<br>
-                            No olvides contactarme!.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div> 
+        </nav>
 
         <!-- *************************************************** BODY HOME *************************************************** -->
-        <div class="container">
+        <div class="container" id="home">
             <div class="container p-3 mb-2 bg-light text-dark seccion-redondeada shadow-sm mb-5 bg-body" id="inicio">
                 <h1 class="text-center h1">Hi, I'm Nico Hermida</h1>
                 <a href="#"><img src="imagenes/img-portada.jpg" alt="" class="img-fluid rounded-circle mx-auto d-block " width="270"></a>
