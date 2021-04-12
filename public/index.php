@@ -1,41 +1,26 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php include("header.php"); ?>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- ************************************************** HOME ************************************************** -->
+  <div class="container" id="home">
+    <h1>Hi, I'm Nico Hermida</h1>
+    <img src="images/perfil.jpg" alt="perfil.jpg" id="imgHome">
 
-    <!-- JQuery Module -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
-    <!-- Font awesome Kit-->
-    <script src="https://kit.fontawesome.com/f241e46f9b.js" crossorigin="anonymous"></script>
-
-    <!-- Own CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <title>I'm Nico Hermida</title>
-    <link rel="shortcut icon" href="images/logo.png">
-  </head>
-  <body>
-    
-    <!-- ************************************************** HOME ************************************************** -->
-    <div class="container" id="home">
-      <h1>Hi, I'm Nico Hermida</h1>
-      <img src="" alt="">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <!-- About me -->
+        <div class="card" id="aboutMe">
+          <div class="card-header"><span class="float-start"><i class="fas fa-code"></i></span>About me<span class="float-end invisible"><i class="fas fa-code"></i></span></div>
+          <div class="card-body">
+            Hello! My name is Hermida Nicolás. <br>
+            I'm a 21 year old Argentinean software developer. <br>
+            I'm currently in the 3rd year of my bachelor's degree in systems at the faculty of computer science (UNLP). <br>
+            In addition to programming, I love sports and design. <br>
+            Below you can see some of my projects and how to contact me. <br>
+            Nice to meet you!
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-
-    <!-- Bootstrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Own Scripts -->
-    <script src="javascript/script.js"></script>
-  </body>
-</html>
+<?php include("footer.php"); ?>
