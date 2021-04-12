@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -24,4 +25,41 @@
         <link rel="shortcut icon" href="images/logo.png">
     </head>
     <body>
+
+        <!-- ************************************************** NAVBAR ************************************************** -->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
+            <div class="container">
+
+                <!-- Navbar brand -->
+                <a href="" class="navbar-brand"><img src="images/logo.png" alt="" id="navbarLogo"></a>
+
+                <!-- Toggler button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav nav-pills me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="home" id="navbarHome">Home</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="navbarProjects">Projects</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="navbarSkills">Skills</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="navbarContact">Contact me</a>
+                        </li> 
+                    </ul>
+
+                    <!-- Navbar Corazon -->
+                    <a href="#" id="navbarCorazon" class="float-end">
+                        <img class="img-fluid" src="images/corazon-vacio.png" alt="">
+                    </a>
+                </div>              
+            </div>
+        </nav>
         

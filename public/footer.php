@@ -1,7 +1,8 @@
-        <!-- ************** FOOTER ************** -->
+
+         <!-- ************************************************** FOOTER ************************************************** -->
         <div class="container-fluid" id="footer1">
             <div class="container">
-                <img src="images/logo.png" alt="" class="img-fluid">
+                <img src="images/logo.png" alt="">
            </div>
         </div>
 
@@ -9,7 +10,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-4">
-                        <p class="text-white-50 mt-4">Hecho con &nbsp<i class="far fa-heart"></i>&nbsp by Nico Hermida.</p>
+                        <p class="text-white-50 mt-4">Made with &nbsp<i class="far fa-heart"></i>&nbsp by Nico Hermida.</p>
                     </div>
                     <div class="col-4">
                         <p class="text-end mt-4">

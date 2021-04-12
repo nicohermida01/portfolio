@@ -8,13 +8,13 @@
     <div class="row justify-content-center">
       <div class="col-10">
         <!-- About me -->
-        <div class="card" id="aboutMe">
+        <div class="card">
           <div class="card-header"><span class="float-start"><i class="fas fa-code"></i></span>About me<span class="float-end invisible"><i class="fas fa-code"></i></span></div>
           <div class="card-body">
-            Hello! My name is Hermida Nicolás. <br>
+            Hello! My name is Nicolás Hermida. <br>
             I'm a 21 year old Argentinean software developer. <br>
-            I'm currently in the 3rd year of my bachelor's degree in systems at the faculty of computer science (UNLP). <br>
-            In addition to programming, I love sports and design. <br>
+            I'm currently in the 3rd year of my bachelor's degree in systems at the Universidad de La Plata(UNLP). <br>
+            For the other side, I love sports and design. <br>
             Below you can see some of my projects and how to contact me. <br>
             Nice to meet you!
           </div>
