@@ -1,0 +1,30 @@
+/* ########################################################################################################### */
+/* ############################################### MEDIAQUERIES ############################################## */
+/* ########################################################################################################### */
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    header nav {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contenido-about .perfil {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .contenido-about .descripcion {
+        font-size: 12px;
+    }
+}
