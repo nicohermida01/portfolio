@@ -40,6 +40,10 @@
     padding: 20px;
 }
 
+.contenido-about .descripcion h1 {
+    font-size: 40px;
+}
+
 .contenido-about .descripcion p {
     color: #5f5f5f;
 }
@@ -61,5 +65,47 @@
 .contenido-skills {
     width: 100%;
     background: #fff;
-    height: 100vh;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.encabezado-skills {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-grid .card {
+    width: 180px;
+    height: 220px;
+    background: #ccc;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card-grid .card:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.card-grid .card i {
+    font-size: 80px;
+}
+
+.card-grid .card p {
+    font-size: 22px;
+    font-weight: bold;
 }
