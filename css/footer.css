@@ -22,6 +22,11 @@ footer .creado-por {
     color: #333;
 }
 
+footer .creado-por i {
+    color: #ff3b3b;
+    
+}
+
 footer .redes-sociales {
     display: flex;
     align-content: center;

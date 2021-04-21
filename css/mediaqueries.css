@@ -19,12 +19,45 @@
 
     .contenido-about .perfil {
         width: 100%;
+        justify-content:space-around;
+    }
+
+    .contenido-about .descripcion {
+        width: 40%;
+    }
+
+    .contenido-about .descripcion h1 {
+        font-size: 32px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .contenido-about .perfil {
+        flex-direction: column;
+    }
 
     .contenido-about .descripcion {
-        font-size: 12px;
+        width: 100%;
+    }
+
+    .contenido-about .descripcion h1 {
+        font-size: 22px;
+    }
+
+    .contenido-about .descripcion p {
+        font-size: 14px;
+    }
+
+    .contenido-about .perfil .contenedor-imagen {
+        width: 50%;
     }
 }

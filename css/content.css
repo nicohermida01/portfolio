@@ -62,9 +62,13 @@
 /* #################### SKILLS ################### */
 /* ############################################### */
 
-.contenido-skills {
-    width: 100%;
+#skills {
     background: #fff;
+}
+
+.contenido-skills {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
 }
@@ -102,10 +106,41 @@
 }
 
 .card-grid .card i {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .card-grid .card p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+#html:hover {
+    background: radial-gradient(ellipse at center, rgba(247,142,55,1) 0%, rgba(247,142,55,1) 20%, rgba(235,92,36,1) 100%);
+}
+#css:hover {
+    background: radial-gradient(ellipse at center, rgba(17,184,246,1) 0%, rgba(17,184,246,1) 17%, rgba(0,120,193,1) 100%);
+}
+#javascript:hover {
+    background: radial-gradient(ellipse at center, rgba(255,218,64,1) 0%, rgba(255,218,64,1) 20%, rgba(214,186,50,1) 100%);
+}
+#bootstrap:hover {
+    background: radial-gradient(ellipse at center, rgba(139,87,217,1) 0%, rgba(139,87,217,1) 20%, rgba(48,18,93,1) 100%);
+}
+#responsive:hover {
+    background: radial-gradient(ellipse at center, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 19%, rgba(182,141,76,1) 100%);
+}
+#php:hover {
+    background: radial-gradient(ellipse at center, rgba(146,169,237,1) 0%, rgba(146,169,237,1) 20%, rgba(82,97,145,1) 100%);
+}
+#mysql:hover {
+    background: radial-gradient(ellipse at center, rgba(184,222,251,1) 0%, rgba(184,222,251,1) 20%, rgba(10,52,94,1) 100%);
+}
+#python:hover{
+    background: radial-gradient(ellipse at center, rgba(255,230,117,1) 0%, rgba(255,230,117,1) 20%, rgba(187,148,0,1) 100%);
+}
+#java:hover {
+    background: radial-gradient(ellipse at center, rgba(243,29,29,1) 0%, rgba(243,29,29,1) 21%, rgba(151,3,3,1) 100%);
+}
+#figma:hover {
+    background: radial-gradient(ellipse at center, rgba(26,188,254,1) 0%, rgba(26,188,254,1) 20%, rgba(10,207,131,1) 100%);
 }
