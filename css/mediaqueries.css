@@ -31,9 +31,39 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 830px) {
+
+    .card-grid .card {
+        width: 120px;
+        height: 160px
+    }
+    .card-grid .card p {
+        font-size: 16px;
+    }
+    .card-grid .card i {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .contenido-skills {
+        width: 90%;
+    }
+    .card-grid .card {
+        width: 100px;
+        height: 140px
+    }
+    .card-grid .card p {
+        font-size: 14px;
+    }
+    .card-grid .card i {
+        font-size: 46px;
+    }
 
 }
+
+
 
 @media screen and (max-width: 450px) {
 
@@ -59,5 +89,22 @@
 
     .contenido-about .perfil .contenedor-imagen {
         width: 50%;
+    }
+
+    .contenido-skills {
+        width: 100%;
+    }
+
+    .card-grid .card {
+        width: 80px;
+        height: 100px
+    }
+
+    .card-grid .card p {
+        font-size: 10px;
+    }
+
+    .card-grid .card i {
+        font-size: 36px;
     }
 }
