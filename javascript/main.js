@@ -33,6 +33,32 @@ window.addEventListener('scroll', () => {
 });
 
 /* ####################################################################################################### */
+/*                                         EVENTO ABRIR IMAGEN                                             */   
+/* ####################################################################################################### */
+
+const overlay = document.getElementById("overlay");
+
+document.querySelectorAll('#works section .img-contenedor img').forEach(elem => {
+    elem.addEventListener('click', () => {
+        const ruta = elem.getAttribute('src');
+        document.querySelector('#overlay img').src = ruta;
+        overlay.classList.add('activo');
+    });
+});
+
+/* ####################################################################################################### */
+/*                                 EVENTO CLICK BOTON CERRAR IMAGEN                                        */   
+/* ####################################################################################################### */
+
+document.querySelector('#btn-cerrar-popup').addEventListener('click', () => overlay.classList.remove('activo'));
+
+/* ####################################################################################################### */
+/*                                   EVENTO CLICK EN EL OVERLAY                                            */   
+/* ####################################################################################################### */
+
+overlay.addEventListener('click', evento => evento.target.id === 'overlay' ? overlay.classList.remove('activo') : "");
+
+/* ####################################################################################################### */
 /*                                        LIBRERIA DE PARTICULAS                                           */   
 /* ####################################################################################################### */
 
