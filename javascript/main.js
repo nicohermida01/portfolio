@@ -1,4 +1,3 @@
-document.getElementById('linkDisabled').addEventListener('click', event => event.preventDefault());
 
 /* ####################################################################################################### */
 /*                                              SCROLL SPY                                                 */   

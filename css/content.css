@@ -46,7 +46,13 @@
 
 .contenido-about .descripcion p {
     color: #5f5f5f;
-    font-size: 18px;
+}
+
+.contenido-about .descripcion p:first-of-type {
+    font-size: 24px;
+}
+.contenido-about.descripcion p:last-of-type {
+    font-size: 16px;
 }
 
 .contenido-about .perfil .contenedor-imagen {
