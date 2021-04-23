@@ -1,3 +1,4 @@
+document.getElementById('linkDisabled').addEventListener('click', event => event.preventDefault());
 
 /* ####################################################################################################### */
 /*                                              SCROLL SPY                                                 */   
@@ -46,16 +47,10 @@ document.querySelectorAll('#works section .img-contenedor img').forEach(elem => 
     });
 });
 
-/* ####################################################################################################### */
-/*                                 EVENTO CLICK BOTON CERRAR IMAGEN                                        */   
-/* ####################################################################################################### */
-
+/* CLICK EN CERRAR IMAGEN (CRUZ) */
 document.querySelector('#btn-cerrar-popup').addEventListener('click', () => overlay.classList.remove('activo'));
 
-/* ####################################################################################################### */
-/*                                   EVENTO CLICK EN EL OVERLAY                                            */   
-/* ####################################################################################################### */
-
+/* CLICK EN EL OVERLAY (CERRAR) */
 overlay.addEventListener('click', evento => evento.target.id === 'overlay' ? overlay.classList.remove('activo') : "");
 
 /* ####################################################################################################### */
