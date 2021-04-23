@@ -1,3 +1,41 @@
+
+/* ####################################################################################################### */
+/*                                              SCROLL SPY                                                 */   
+/* ####################################################################################################### */
+
+const botones_nav = document.querySelectorAll("header nav a");
+
+const removeActiveClass = () => botones_nav.forEach(boton => boton.classList.remove('active'));
+
+const addActiveClass = index => {
+    removeActiveClass();
+    botones_nav[index - 1].classList.add('active');
+}
+
+var section = [
+    document.getElementById('home'),
+    document.getElementById('works'),
+    document.getElementById('skills')
+];
+
+var offsetSection = {};
+section.forEach(e => offsetSection[e.id] = e.offsetTop);
+
+
+window.addEventListener('scroll', () => {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    
+    for (var i in offsetSection){
+        if (offsetSection[i] <= scrollPosition) {
+            addActiveClass(document.getElementById(i).dataset.index);
+        }
+    }
+});
+
+/* ####################################################################################################### */
+/*                                        LIBRERIA DE PARTICULAS                                           */   
+/* ####################################################################################################### */
+
 particlesJS(
     {
     "particles": {
@@ -110,11 +148,4 @@ particlesJS(
     "retina_detect": true
     }
 );
-
-
-$("header nav a").click(function(){
-    $("header nav a").removeClass("active");
-
-    $(this).addClass("active");
-});
 
