@@ -20,6 +20,7 @@ footer {
 
 footer .creado-por {
     color: #333;
+    font-size: 18px;
 }
 
 footer .creado-por i {
@@ -44,11 +45,15 @@ footer .redes-sociales a {
     text-align: center;
     border-radius: 100px;
     transition: .3s ease all;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 footer .redes-sociales a i {
     font-size: 28px;
-    line-height: 60px;
 }
 
 footer .contenedor-icono:hover a {
