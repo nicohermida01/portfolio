@@ -249,8 +249,14 @@
 #css:hover {
     background: radial-gradient(ellipse at center, rgba(17,184,246,1) 0%, rgba(17,184,246,1) 17%, rgba(0,120,193,1) 100%);
 }
+#sass:hover {
+    background: radial-gradient(ellipse at center, rgba(206,100,153,0.75) 0%, rgba(206,100,153,0.79) 17%, rgba(170,97,141,1) 100%);
+}
 #javascript:hover {
     background: radial-gradient(ellipse at center, rgba(255,218,64,1) 0%, rgba(255,218,64,1) 20%, rgba(214,186,50,1) 100%);
+}
+#react:hover {
+    background: radial-gradient(ellipse at center, rgba(97,218,253,0.75) 0%, rgba(97,218,253,0.79) 17%, rgba(11,50,83,1) 100%);
 }
 #responsive:hover {
     background: radial-gradient(ellipse at center, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 19%, rgba(182,141,76,1) 100%);
