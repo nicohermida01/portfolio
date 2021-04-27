@@ -1,0 +1,84 @@
+#works
+    width: 100%
+    min-height: 100vh
+    background: #fff
+    padding: 100px 0
+    h2
+        width: 30%
+        margin: 0 auto
+        text-align: center
+        padding: 10px 0
+        border-bottom: 1px solid #ccc
+    section
+        width: 80%
+        margin: 100px auto
+        padding: 20px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        .descripcion-work
+            width: 40%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            h3
+                margin-bottom: 5px
+                font-size: 26px
+            p
+                :first-of-type
+                    color: #999999
+                    margin-bottom: 20px
+                :last-of-type
+                    color: #999999
+            a
+                padding: 10px 30px
+                background: #326FCB
+                color: #fff
+                border-radius: 5px
+            a:hover
+                box-shadow: 0 0 15px #333
+        .img-contenedor
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            img
+                width: 100%
+                cursor: pointer
+                box-shadow: 0 0 15px #333
+            img:hover
+                box-shadow: 0 0 10px #333,0 0 30px #326FCB
+
+#overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0,0,0,.9)
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 100
+    display: none
+    .contenedor-img
+        position: relative
+        #btn-cerrar-popup
+            background: none
+            font-size: 20px
+            color: #fff
+            border: none
+            cursor: pointer
+            position: absolute
+            right: -20px
+            top: -20px
+        img
+            max-width: 100%
+
+.activo
+    display: flex !important

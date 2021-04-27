@@ -1,0 +1,91 @@
+@media screen and (max-width: 900px)
+    .header-container
+        header
+            flex-direction: column
+            padding: 0
+            .logo
+                margin: 20px 0
+            nav
+                width: 100%
+                margin-bottom: 20px
+    #home
+        .contenido-about
+            .perfil
+                width: 100%
+                justify-content: space-around
+                .descripcion
+                    width: 40%
+                    h1
+                        font-size: 32px
+    #works
+        section
+            width: 100%
+
+@media screen and (max-width: 830px)
+    #skills
+        .card-grid
+            .card
+                width: 120px
+                height: 160px
+                i
+                    font-size: 52px
+                p
+                    font-size: 16px
+
+@media screen and (max-width: 600px)
+    #skills
+        .card-grid
+            width: 90%
+            .card
+                width: 100px
+                height: 140px
+                i
+                    font-size: 46px
+                p
+                    font-size: 14px
+
+@media screen and (max-width: 450px)
+    .header-container
+        header   
+            nav
+                a
+                    font-size: 14px
+    #home
+        .contenido-about
+            .perfil
+                flex-direction: column
+                .descripcion
+                    width: 100%
+                    h1
+                        font-size: 22px
+                    p
+                        :first-of-type
+                            font-size: 14px
+                        :last-of-type
+                            font-size: 12px
+                .contenedor-imagen
+                    width: 50%
+    #works
+        padding: 50px 0
+        section
+            flex-direction: column
+            align-items: center
+            margin: 50px 0
+            .descripcion-work
+                width: 100%
+                order: 1
+                margin-bottom: 20px
+            .img-contenedor
+                width: 80%
+                order: 2
+    #skills
+        padding: 50px 0
+        .card-grid
+            width: 100%
+            .card
+                width: 80px
+                height: 100px
+                i
+                    font-size: 36px
+                p
+                    font-size: 10px
