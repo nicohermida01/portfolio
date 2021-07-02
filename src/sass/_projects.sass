@@ -1,0 +1,189 @@
+@import _colors
+
+.projectsStructureDesktop
+    font-size: 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 4.375em
+
+    h2
+        text-transform: uppercase
+        text-align: center
+        cursor: context-menu
+        font-size: 1.375em
+
+    .projectsContainer
+        width: 55vw
+
+        .projectCard
+            background: $baseWhite
+            width: 100%
+            height: max-content
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            border-radius: 1.25em
+            margin-top: 3.125em
+            padding: 1.25em 0
+            box-shadow: 0 0.3125em 0.625em 0 $baseShadow
+
+            .macButtons
+                position: absolute
+                top: 0.9375em
+                left: 0.9375em
+                width: 4.375em
+
+            .projectHeader
+                font-size: 1em
+                cursor: context-menu
+                font-weight: bold
+                text-align: center
+
+                p:nth-child(1)
+                    color: $baseDark
+                    font-size: 1.625em
+                    
+                p:nth-child(2)  
+                    font-size: 1em
+                    color: $graySubtitle
+            
+            .projectImage
+                width: 50%
+                margin: 1.25em 0
+                box-shadow: 0 0 0.9375em 0.0625em $baseShadow
+                cursor: pointer
+
+            .projectDescription
+                font-size: 1em
+                text-align: center
+                color: $graySubtitle
+                cursor: context-menu
+
+            .projectTechnology
+                width: 20%
+                display: flex
+                justify-content: space-between
+                margin-top: 1.25em
+
+                img
+                    width: 1.875em
+
+            .projectButtons
+                width: 30%
+                display: flex
+                justify-content: space-between
+
+                a
+                    background: $baseDark
+                    color: $whiteLetter
+                    padding: 0.625em 1.875em
+                    border-radius: 0.625em
+                    transition: .3s ease all
+                    margin-top: 1.25em
+                    
+
+                    &:hover
+                        background: $black
+                        box-shadow: 0 0.3125em 0.3125em 0 $baseShadow
+                        margin-top: 0.9375em
+                        margin-bottom: 0.3125em
+                        
+
+            .oneItem
+                width: max-content
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+
+.projectsStructureMobile
+    font-size: 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 11.875em
+
+    h2
+        text-transform: uppercase
+        text-align: center
+        cursor: context-menu
+        font-size: 1.5714em
+
+    .projectsContainer
+        width: 80vw
+
+        .projectCard
+            background: $baseWhite
+            width: 100%
+            height: max-content
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            border-radius: 1.25em
+            margin-top: 3.125em
+            padding: 1.25em 0
+            box-shadow: 0 0.3125em 0.625em 0 $baseShadow
+
+            .macButtons
+                position: absolute
+                top: 0.9375em
+                left: 0.9375em
+                width: 4.375em
+
+            .projectHeader
+                font-size: 1.3125em
+                cursor: context-menu
+                font-weight: bold
+                text-align: center
+
+                p:nth-child(1)
+                    color: $baseDark
+                    font-size: 1.625em
+                    
+                p:nth-child(2)  
+                    font-size: 1em
+                    color: $graySubtitle
+            
+            .projectImage
+                width: 60%
+                margin: 1.25em 0
+                box-shadow: 0 0 0.9375em 0.0625em $baseShadow
+
+            .projectDescription
+                font-size: 1.3125em
+                text-align: center
+                color: $graySubtitle
+                cursor: context-menu
+
+            .projectTechnology
+                width: 25%
+                display: flex
+                justify-content: space-between
+                margin-top: 1.25em
+
+                img
+                    width: 1.875em
+
+            .projectButtons
+                width: 45%
+                display: flex
+                justify-content: space-between
+                font-size: 1.3125em
+
+                a
+                    background: $baseDark
+                    color: $whiteLetter
+                    padding: 0.625em 1.875em
+                    border-radius: 0.625em
+                    transition: .3s ease all
+                    margin-top: 1.25em
+                    box-shadow: 0 0.3125em 0.3125em 0 $baseShadow
+            
+            .oneItem
+                width: max-content !important
+                
+

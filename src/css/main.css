@@ -1,0 +1,971 @@
+@font-face {
+  font-family: "Sansation";
+  src: url("../assets/font/Sansation-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("../assets/font/Sansation-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background: #F2F2F2;
+  font-family: Sansation;
+}
+
+section {
+  width: 100vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.headerStructureDesktop {
+  background: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  font-size: 16px;
+}
+.headerStructureDesktop .navContainer {
+  width: 80%;
+  max-width: 125em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.headerStructureDesktop .navContainer .navHeader {
+  display: flex;
+  align-items: center;
+  color: #DDDDDD;
+  font-weight: bold;
+  cursor: context-menu;
+}
+.headerStructureDesktop .navContainer .navHeader img {
+  width: 2.5em;
+  margin-right: 0.625em;
+}
+.headerStructureDesktop .navContainer .navHeader p {
+  font-size: 1em;
+}
+.headerStructureDesktop .navContainer nav {
+  display: flex;
+}
+.headerStructureDesktop .navContainer nav a {
+  color: #DDDDDD;
+  font-weight: bold;
+  padding: 1em 1.25em;
+  transition: 0.3s ease all;
+  font-size: 1em;
+}
+.headerStructureDesktop .navContainer nav a:hover {
+  background: #000;
+}
+.headerStructureDesktop .navContainer nav .active {
+  background: #326FCB !important;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+.headerStructureMobile {
+  background: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  font-size: 24px;
+}
+.headerStructureMobile .navContainer {
+  width: 100%;
+  max-width: 125em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headerStructureMobile .navContainer .navHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DDDDDD;
+  font-weight: bold;
+  cursor: context-menu;
+  padding: 0.3125rem;
+}
+.headerStructureMobile .navContainer .navHeader img {
+  width: 2.5em;
+  margin-right: 0.625em;
+}
+.headerStructureMobile .navContainer .navHeader p {
+  font-size: 1em;
+}
+.headerStructureMobile .navContainer nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.3125em;
+}
+.headerStructureMobile .navContainer nav a {
+  color: #DDDDDD;
+  font-weight: bold;
+  padding: 1em 1.25em;
+  transition: 0.3s ease all;
+  font-size: 1em;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
+}
+.headerStructureMobile .navContainer nav a:hover {
+  background: #000;
+}
+.headerStructureMobile .navContainer nav .active {
+  background: #326FCB !important;
+}
+
+.homeStructureDesktop {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.homeStructureDesktop .homeContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeStructureDesktop .homeContent h1 {
+  cursor: context-menu;
+  font-size: 1.5em;
+}
+.homeStructureDesktop .homeContent p {
+  color: #999999;
+  cursor: context-menu;
+  font-size: 1em;
+}
+.homeStructureDesktop .homeContent .contacts {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: row;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer a {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 0.625em;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer a img {
+  width: 50%;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer .twitter {
+  background: #1DA1F2;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer .instagram {
+  background: #C13584;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer .github {
+  background: #333;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer .linkedin {
+  background: #0270AD;
+}
+.homeStructureDesktop .homeContent .contacts .iconContainer:hover a {
+  animation: icon 0.5s ease;
+}
+.homeStructureDesktop .logoContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.homeStructureDesktop .logoContainer img {
+  width: 16.875em;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+.homeStructureMobile {
+  font-size: 26px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.homeStructureMobile .homeContent {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.homeStructureMobile .homeContent h1 {
+  cursor: context-menu;
+  font-size: 1.5em;
+}
+.homeStructureMobile .homeContent p {
+  color: #999999;
+  cursor: context-menu;
+  font-size: 1em;
+}
+.homeStructureMobile .homeContent .contacts {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: row;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer a {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 0.625em;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer a img {
+  width: 50%;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer .twitter {
+  background: #1DA1F2;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer .instagram {
+  background: #C13584;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer .github {
+  background: #333;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer .linkedin {
+  background: #0270AD;
+}
+.homeStructureMobile .homeContent .contacts .iconContainer:hover a {
+  animation: icon 0.5s ease;
+}
+.homeStructureMobile .logoContainer {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.homeStructureMobile .logoContainer img {
+  height: 16.875em;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+@keyframes icon {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+.aboutStructureDesktop {
+  display: flex;
+  align-items: center;
+  max-height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+.aboutStructureDesktop .aboutContainer {
+  width: 50vw;
+  height: 100vh;
+  background-image: url("/src/assets/images/background_about_desktop.png");
+  background-size: 50vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer {
+  width: 80%;
+  padding-left: 3.125em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .descriptionHeader {
+  font-weight: bold;
+  cursor: context-menu;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .descriptionHeader p:nth-child(1) {
+  font-size: 2.5em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .descriptionHeader p:nth-child(2) {
+  font-size: 1.5em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .description {
+  cursor: context-menu;
+  font-size: 1em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .description p:nth-child(1) {
+  margin-top: 3.125em;
+  margin-bottom: 1.875em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .descriptionBtn {
+  display: block;
+  width: max-content;
+  color: #DDDDDD;
+  padding: 0.625em 1.25em;
+  background: #333;
+  border-radius: 0.375em;
+  transition: 0.3s ease all;
+  margin-top: 3.125em;
+}
+.aboutStructureDesktop .aboutContainer .descriptionContainer .descriptionBtn:hover {
+  background: #000;
+  box-shadow: 0 0.3125em 0.25em 0 #234E8F;
+  margin-top: 2.8125em;
+  margin-bottom: 0.3125em;
+}
+.aboutStructureDesktop .photoContainer {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutStructureDesktop .photoContainer img {
+  width: 15.625em;
+  border-radius: 14.0625rem;
+  box-shadow: 0 0.625rem 0.75rem 0.625rem #9A9A9A;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+.aboutStructureMobile {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 26px;
+  overflow: hidden;
+}
+.aboutStructureMobile .aboutContainer {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("/src/assets/images/background_about_mobile.png");
+  background-size: 100vw 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer {
+  height: max-content;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .descriptionHeader {
+  font-weight: bold;
+  cursor: context-menu;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .descriptionHeader p:nth-child(1) {
+  font-size: 2.5em;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .descriptionHeader p:nth-child(2) {
+  font-size: 1.5em;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .description {
+  cursor: context-menu;
+  font-size: 1em;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .description p:nth-child(1) {
+  margin: 1.25em 0;
+}
+.aboutStructureMobile .aboutContainer .descriptionContainer .descriptionBtn {
+  display: block;
+  margin-top: 1.875em;
+  color: #DDDDDD;
+  padding: 0.625em 1.25em;
+  background: #333;
+  border-radius: 0.375em;
+  box-shadow: 0 0.5em 0.25em 0 #234E8F;
+}
+.aboutStructureMobile .photoContainer {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.aboutStructureMobile .photoContainer img {
+  height: 15.625em;
+  border-radius: 14.0625rem;
+  box-shadow: 0 0.625rem 0.75rem 0.625rem #9A9A9A;
+  margin-bottom: 3.125em;
+}
+
+.skillsStructureDesktop {
+  max-height: 100vh;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillsStructureDesktop .skillsContent {
+  height: 70vh;
+  width: 70vw;
+}
+.skillsStructureDesktop .skillsContent h2 {
+  font-size: 1.5714em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: context-menuh;
+  height: 10%;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1.25em;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25em;
+  transition: 0.3s ease all;
+  cursor: context-menu;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .cardImage {
+  height: 25%;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .cardImage svg {
+  height: 100%;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .cardImage svg path {
+  transition: 0.3s ease all;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .skillDetails {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1.25em;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .skillDetails p:nth-child(1) {
+  font-weight: bold;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard .skillDetails p:nth-child(2) {
+  color: #999999;
+  font-size: 0.7em;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard:hover {
+  box-shadow: 0 0.125em 0.5em 0 #9A9A9A;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard:hover svg path {
+  fill: #333;
+}
+.skillsStructureDesktop .skillsContent .skillsGrid .skillCard:hover svg .letterWhite {
+  fill: #DDDDDD;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+.skillsStructureMobile {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillsStructureMobile .skillsContent {
+  height: 70vh;
+  width: 70vw;
+}
+.skillsStructureMobile .skillsContent h2 {
+  font-size: 1.5714em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: context-menuh;
+  height: 10%;
+}
+.skillsStructureMobile .skillsContent .skillsGrid {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1.25em;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25em;
+  transition: 0.3s ease all;
+  cursor: context-menu;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .cardImage {
+  width: 3.75em;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .cardImage svg {
+  width: 100%;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .cardImage svg path {
+  transition: 0.3s ease all;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .skillDetails {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .skillDetails p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard .skillDetails p:nth-child(2) {
+  color: #999999;
+  font-size: 1.25em;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard:hover {
+  box-shadow: 0 0.125em 0.5em 0 #9A9A9A;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard:hover svg path {
+  fill: #333;
+}
+.skillsStructureMobile .skillsContent .skillsGrid .skillCard:hover svg .letterWhite {
+  fill: #DDDDDD;
+}
+
+.projectsStructureDesktop {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.375em;
+}
+.projectsStructureDesktop h2 {
+  text-transform: uppercase;
+  text-align: center;
+  cursor: context-menu;
+  font-size: 1.375em;
+}
+.projectsStructureDesktop .projectsContainer {
+  width: 55vw;
+}
+.projectsStructureDesktop .projectsContainer .projectCard {
+  background: #fff;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 1.25em;
+  margin-top: 3.125em;
+  padding: 1.25em 0;
+  box-shadow: 0 0.3125em 0.625em 0 #9A9A9A;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .macButtons {
+  position: absolute;
+  top: 0.9375em;
+  left: 0.9375em;
+  width: 4.375em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectHeader {
+  font-size: 1em;
+  cursor: context-menu;
+  font-weight: bold;
+  text-align: center;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectHeader p:nth-child(1) {
+  color: #333;
+  font-size: 1.625em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectHeader p:nth-child(2) {
+  font-size: 1em;
+  color: #999999;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectImage {
+  width: 50%;
+  margin: 1.25em 0;
+  box-shadow: 0 0 0.9375em 0.0625em #9A9A9A;
+  cursor: pointer;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectDescription {
+  font-size: 1em;
+  text-align: center;
+  color: #999999;
+  cursor: context-menu;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectTechnology {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectTechnology img {
+  width: 1.875em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectButtons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectButtons a {
+  background: #333;
+  color: #DDDDDD;
+  padding: 0.625em 1.875em;
+  border-radius: 0.625em;
+  transition: 0.3s ease all;
+  margin-top: 1.25em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .projectButtons a:hover {
+  background: #000;
+  box-shadow: 0 0.3125em 0.3125em 0 #9A9A9A;
+  margin-top: 0.9375em;
+  margin-bottom: 0.3125em;
+}
+.projectsStructureDesktop .projectsContainer .projectCard .oneItem {
+  width: max-content;
+}
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+.projectsStructureMobile {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11.875em;
+}
+.projectsStructureMobile h2 {
+  text-transform: uppercase;
+  text-align: center;
+  cursor: context-menu;
+  font-size: 1.5714em;
+}
+.projectsStructureMobile .projectsContainer {
+  width: 80vw;
+}
+.projectsStructureMobile .projectsContainer .projectCard {
+  background: #fff;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 1.25em;
+  margin-top: 3.125em;
+  padding: 1.25em 0;
+  box-shadow: 0 0.3125em 0.625em 0 #9A9A9A;
+}
+.projectsStructureMobile .projectsContainer .projectCard .macButtons {
+  position: absolute;
+  top: 0.9375em;
+  left: 0.9375em;
+  width: 4.375em;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectHeader {
+  font-size: 1.3125em;
+  cursor: context-menu;
+  font-weight: bold;
+  text-align: center;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectHeader p:nth-child(1) {
+  color: #333;
+  font-size: 1.625em;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectHeader p:nth-child(2) {
+  font-size: 1em;
+  color: #999999;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectImage {
+  width: 60%;
+  margin: 1.25em 0;
+  box-shadow: 0 0 0.9375em 0.0625em #9A9A9A;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectDescription {
+  font-size: 1.3125em;
+  text-align: center;
+  color: #999999;
+  cursor: context-menu;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25em;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectTechnology img {
+  width: 1.875em;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectButtons {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3125em;
+}
+.projectsStructureMobile .projectsContainer .projectCard .projectButtons a {
+  background: #333;
+  color: #DDDDDD;
+  padding: 0.625em 1.875em;
+  border-radius: 0.625em;
+  transition: 0.3s ease all;
+  margin-top: 1.25em;
+  box-shadow: 0 0.3125em 0.3125em 0 #9A9A9A;
+}
+.projectsStructureMobile .projectsContainer .projectCard .oneItem {
+  width: max-content !important;
+}
+
+#overlay {
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: none;
+}
+#overlay img {
+  max-height: 90vh;
+  max-width: 90vw;
+}
+#overlay .closeOverlay {
+  padding: 0.625em 2.5em;
+  background: #204B7B;
+  border: none;
+  outline: none;
+  border-radius: 0.3125em;
+  color: #DDDDDD;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 0.625em;
+  width: max-content;
+}
+#overlay .closeOverlay:hover {
+  background: #326FCB;
+}
+
+.overlayActivo {
+  display: flex !important;
+}
+
+footer {
+  width: 100%;
+  background: #333;
+  font-size: 16px;
+  margin-top: 3.125em;
+}
+footer .footerContainer {
+  width: 80%;
+  max-width: 125em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DDDDDD;
+}
+footer .footerContainer p {
+  cursor: context-menu;
+  padding: 0.75em 0;
+  font-size: 1em;
+}
+footer .footerContainer img {
+  width: 1.25em;
+  margin: 0 0.375em;
+}
+
+@media screen and (min-width: 1800px) {
+  .headerStructureDesktop {
+    font-size: 20px;
+  }
+
+  .homeStructureDesktop {
+    font-size: 20px;
+  }
+
+  .aboutStructureDesktop {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .skillsStructureDesktop {
+    font-size: 12px;
+  }
+
+  .projectsStructureDesktop {
+    font-size: 12px;
+  }
+}
+/** width mas grande que 1000px valores por defecto 'iPad Pro' **/
+@media screen and (max-width: 1000px) {
+  .headerStructureMobile {
+    font-size: 18px;
+  }
+
+  .homeStructureMobile {
+    font-size: 18px;
+  }
+
+  .aboutStructureMobile {
+    font-size: 18px;
+  }
+
+  .skillsStructureMobile {
+    font-size: 12px;
+  }
+
+  .projectsStructureMobile {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .headerStructureMobile {
+    font-size: 14px;
+  }
+
+  .homeStructureMobile {
+    font-size: 14px;
+  }
+
+  .aboutStructureMobile {
+    font-size: 16px;
+  }
+
+  .skillsStructureMobile {
+    font-size: 9px;
+  }
+
+  .projectsStructureMobile {
+    font-size: 8px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .homeStructureMobile {
+    font-size: 12px;
+  }
+
+  .aboutStructureMobile {
+    font-size: 13px;
+  }
+
+  .skillsStructureMobile {
+    font-size: 8px;
+  }
+  .skillsStructureMobile .skillsContent {
+    width: 90vw;
+  }
+
+  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
+    width: 30%;
+  }
+  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerStructureMobile {
+    font-size: 12px;
+  }
+
+  .aboutStructureMobile {
+    font-size: 12px;
+  }
+
+  .skillsStructureMobile .skillsContent {
+    width: 80vw;
+    height: 700px;
+    margin-top: 100px;
+  }
+  .skillsStructureMobile .skillsContent h2 {
+    height: max-content;
+  }
+  .skillsStructureMobile .skillsContent .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 10px;
+  }
+
+  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
+    width: 35%;
+  }
+  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
+    width: 65%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .homeStructureMobile {
+    font-size: 11px;
+  }
+
+  .aboutStructureMobile {
+    font-size: 11px;
+  }
+  .aboutStructureMobile .aboutContainer .descriptionContainer .descriptionHeader {
+    font-size: 10px;
+  }
+
+  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
+    width: 40%;
+  }
+  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .projectsStructureMobile {
+    font-size: 7px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

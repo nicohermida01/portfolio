@@ -1,0 +1,146 @@
+@import _colors
+
+.homeStructureDesktop
+    display: flex
+    align-items: center
+    font-size: 16px
+
+    .homeContent
+        width: 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        h1
+            cursor: context-menu
+            font-size: 1.5em
+
+        p
+            color: $graySubtitle
+            cursor: context-menu
+            font-size: 1em
+
+        .contacts
+            margin-top: 1.25em
+            display: flex
+            flex-direction: row
+
+            .iconContainer
+                a   
+                    display: block
+                    width: 2.5em
+                    height: 2.5em
+                    margin: 0 0.625em 
+                    border-radius: 50%
+                    transition: .3s ease all
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    img
+                        width: 50%
+                
+                .twitter
+                    background: $twitter
+                .instagram
+                    background: $instagram
+                .github
+                    background: $baseDark
+                .linkedin  
+                    background: $linkedin
+
+                &:hover
+                    a
+                        animation: icon .5s ease
+
+    .logoContainer
+        width: 50%
+        display: flex
+        justify-content: center
+    
+        img
+            width: 16.875em 
+    
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+
+.homeStructureMobile
+    font-size: 26px
+    display: flex
+    flex-direction: column-reverse
+    justify-content: space-between
+
+    .homeContent
+        width: 100vw
+        height: 35vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+
+        h1
+            cursor: context-menu
+            font-size: 1.5em
+
+        p
+            color: $graySubtitle
+            cursor: context-menu
+            font-size: 1em
+
+        .contacts
+            margin-top: 1.25em
+            display: flex
+            flex-direction: row
+
+            .iconContainer
+                a   
+                    display: block
+                    width: 2.5em
+                    height: 2.5em
+                    margin: 0 0.625em 
+                    border-radius: 50%
+                    transition: .3s ease all
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    img
+                        width: 50%
+                
+                .twitter
+                    background: $twitter
+                .instagram
+                    background: $instagram
+                .github
+                    background: $baseDark
+                .linkedin  
+                    background: $linkedin
+
+                &:hover
+                    a
+                        animation: icon .5s ease
+
+    .logoContainer
+        width: 100vw
+        height: 60vh
+        display: flex  
+        justify-content: center
+        align-items: flex-end
+
+        img
+            height: 16.875em 
+
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+/** ############################################################################################################# **/
+
+@keyframes icon
+    from
+        transform: rotate3d(0,0,0,0)
+    
+    to
+        transform: rotate3d(0,1,0,360deg)
+
