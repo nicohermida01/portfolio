@@ -108,6 +108,94 @@ const closeOverlay = (overlay) => {
     });
 }
 
+/* ######################################################################################################################### */
+/* ######################################################################################################################### */
+/* ######################################################################################################################### */
+
+const skills = [
+    {
+        svg: 'html.svg',
+        title: 'HTML5',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'css.svg',
+        title: 'CSS3',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'javascript.svg',
+        title: 'JavaScript',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'bootstrap.svg',
+        title: 'Bootstrap',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'react.svg',
+        title: 'React JS',
+        detail: 'Since 2021'
+    },
+    {
+        svg: 'sass.svg',
+        title: 'Sass',
+        detail: 'Since 2021'
+    },
+    {
+        svg: 'nodejs.svg',
+        title: 'Node JS',
+        detail: 'Since 2021'
+    },
+    {
+        svg: 'php.svg',
+        title: 'PHP',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'figma.svg',
+        title: 'Figma',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'python.svg',
+        title: 'Python',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'git.svg',
+        title: 'Git',
+        detail: 'Since 2020'
+    },
+    {
+        svg: 'java.svg',
+        title: 'Java',
+        detail: 'Since 2019'
+    }
+]
+
+skills.forEach(skill => {
+    document.getElementById('grid').innerHTML += `
+    <div class='skillCard'>
+        <div class='cardImage' data-src='src/assets/images/${skill.svg}' >
+        </div>
+        <div class='skillDetails'>
+            <p>${skill.title}</p>
+            <p>${skill.detail}</p>
+        </div>
+    </div>
+    `
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('div[data-src]').forEach((svg) => {
+        fetch(svg.dataset.src)
+        .then(res => res.text())
+        .then(xml => svg.innerHTML = xml);
+    });
+});
+
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 

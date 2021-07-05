@@ -628,18 +628,21 @@ section {
   cursor: context-menu;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .projectTechnology {
-  width: 20%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 1.25em;
+  flex-wrap: wrap;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .projectTechnology img {
   width: 1.875em;
+  margin-right: 0.625em;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .projectButtons {
-  width: 30%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .projectButtons a {
   background: #333;
@@ -647,6 +650,7 @@ section {
   padding: 0.625em 1.875em;
   border-radius: 0.625em;
   transition: 0.3s ease all;
+  margin-right: 1.25em;
   margin-top: 1.25em;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .projectButtons a:hover {
@@ -656,7 +660,7 @@ section {
   margin-bottom: 0.3125em;
 }
 .projectsStructureDesktop .projectsContainer .projectCard .oneItem {
-  width: max-content;
+  margin-right: 0 !important;
 }
 
 /** ############################################################################################################# **/
@@ -724,18 +728,21 @@ section {
   cursor: context-menu;
 }
 .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
-  width: 25%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1.25em;
 }
 .projectsStructureMobile .projectsContainer .projectCard .projectTechnology img {
   width: 1.875em;
+  margin-right: 0.625em;
 }
 .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
-  width: 45%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 1.3125em;
 }
 .projectsStructureMobile .projectsContainer .projectCard .projectButtons a {
@@ -746,6 +753,7 @@ section {
   transition: 0.3s ease all;
   margin-top: 1.25em;
   box-shadow: 0 0.3125em 0.3125em 0 #9A9A9A;
+  margin-right: 1.25em;
 }
 .projectsStructureMobile .projectsContainer .projectCard .oneItem {
   width: max-content !important;
@@ -901,13 +909,6 @@ footer .footerContainer img {
   .skillsStructureMobile .skillsContent {
     width: 90vw;
   }
-
-  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
-    width: 30%;
-  }
-  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
-    width: 60%;
-  }
 }
 @media screen and (max-width: 400px) {
   .headerStructureMobile {
@@ -932,13 +933,6 @@ footer .footerContainer img {
     margin-top: 10px;
   }
 
-  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
-    width: 35%;
-  }
-  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
-    width: 65%;
-  }
-
   footer {
     font-size: 12px;
   }
@@ -953,13 +947,6 @@ footer .footerContainer img {
   }
   .aboutStructureMobile .aboutContainer .descriptionContainer .descriptionHeader {
     font-size: 10px;
-  }
-
-  .projectsStructureMobile .projectsContainer .projectCard .projectTechnology {
-    width: 40%;
-  }
-  .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
-    width: 75%;
   }
 }
 @media screen and (max-width: 300px) {
