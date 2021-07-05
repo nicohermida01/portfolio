@@ -638,6 +638,9 @@ section {
   width: 1.875em;
   margin-right: 0.625em;
 }
+.projectsStructureDesktop .projectsContainer .projectCard .projectTechnology img:last-child {
+  margin-right: 0 !important;
+}
 .projectsStructureDesktop .projectsContainer .projectCard .projectButtons {
   width: 90%;
   display: flex;
@@ -659,7 +662,7 @@ section {
   margin-top: 0.9375em;
   margin-bottom: 0.3125em;
 }
-.projectsStructureDesktop .projectsContainer .projectCard .oneItem {
+.projectsStructureDesktop .projectsContainer .projectCard .projectButtons a:last-child {
   margin-right: 0 !important;
 }
 
@@ -738,6 +741,9 @@ section {
   width: 1.875em;
   margin-right: 0.625em;
 }
+.projectsStructureMobile .projectsContainer .projectCard .projectTechnology img:last-child {
+  margin-right: 0 !important;
+}
 .projectsStructureMobile .projectsContainer .projectCard .projectButtons {
   width: 90%;
   display: flex;
@@ -755,8 +761,8 @@ section {
   box-shadow: 0 0.3125em 0.3125em 0 #9A9A9A;
   margin-right: 1.25em;
 }
-.projectsStructureMobile .projectsContainer .projectCard .oneItem {
-  width: max-content !important;
+.projectsStructureMobile .projectsContainer .projectCard .projectButtons a:last-child {
+  margin-right: 0 !important;
 }
 
 #overlay {
