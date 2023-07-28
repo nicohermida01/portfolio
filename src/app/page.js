@@ -1,5 +1,6 @@
 import { Navbar } from 'components/Navbar'
 import { APP_SECTIONS } from 'ssot/appSections'
+import { translator } from 'utils/translator'
 
 export default function Home() {
 	return (
@@ -10,10 +11,10 @@ export default function Home() {
 				id={APP_SECTIONS.HOME}
 				className='bg-home-brackground min-h-screen bg-auto bg-bottom bg-no-repeat grid place-items-center'
 			>
-				<h1 className='text-white font-bold text-[70px] flex flex-col items-center'>
-					Nico Hermida
-					<span className='text-HOME-SUBHEADING font-normal text-[20px]'>
-						Software developer
+				<h1 className='text-white font-bold text-[70px] flex flex-col items-center leading-[50px]'>
+					{translator('home-heading')}
+					<span className='text-HOME-SUBHEADING font-normal text-[20px] line-he'>
+						{translator('home-subheading')}
 					</span>
 				</h1>
 			</section>
