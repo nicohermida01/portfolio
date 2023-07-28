@@ -1,8 +1,10 @@
 import { Navbar } from 'components/Navbar'
 import { APP_SECTIONS } from 'ssot/appSections'
-import { translator } from 'utils/translator'
+import { getDictionary } from 'utils/dictionaries'
 
-export default function Home() {
+export default async function Home() {
+	const i18nDict = await getDictionary() //add other locales
+
 	return (
 		<>
 			<Navbar />
@@ -12,9 +14,9 @@ export default function Home() {
 				className='bg-home-brackground min-h-screen bg-auto bg-bottom bg-no-repeat grid place-items-center'
 			>
 				<h1 className='text-white font-bold text-[70px] flex flex-col items-center leading-[50px]'>
-					{translator('home-heading')}
+					{i18nDict['home-heading']}
 					<span className='text-HOME-SUBHEADING font-normal text-[20px] line-he'>
-						{translator('home-subheading')}
+						{i18nDict['home-subheading']}
 					</span>
 				</h1>
 			</section>
