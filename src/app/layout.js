@@ -1,4 +1,22 @@
+import localFont from 'next/font/local'
+
 import 'app/globals.css'
+
+const SansationFont = localFont({
+	src: [
+		{
+			path: '../ssot/assets/fonts/Sansation-Regular.woff',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: '../ssot/assets/fonts/Sansation-Bold.woff',
+			weight: '700',
+			style: 'normal',
+		},
+	],
+	variable: '--font-sansation',
+})
 
 export const metadata = {
 	title: 'Nico Hermida',
@@ -8,8 +26,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
-			<body>{children}</body>
+		<html lang='en' className={`${SansationFont.variable} font-sans`}>
+			<body className='bg-BODY'>{children}</body>
 		</html>
 	)
 }

@@ -7,8 +7,17 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'home-brackground': 'url("/background1.svg")',
+			},
+			fontFamily: {
+				sans: ['var(--font-sansation)'],
+			},
 			colors: {
-				primary: '#6E07F3',
+				PRIMARY: '#6E07F3',
+				BODY: '#F0EFF5',
+
+				'HOME-SUBHEADING': '#ADADAD',
 			},
 		},
 	},
