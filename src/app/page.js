@@ -1,6 +1,13 @@
+import Image from 'next/image'
+
+import { AboutDescription } from 'components/AboutDescription'
 import { Navbar } from 'components/Navbar'
+import { SoftwareCard } from 'components/SoftwareCard'
 import { APP_SECTIONS } from 'ssot/appSections'
 import { getDictionary } from 'utils/dictionaries'
+
+const sectionBaseStyles =
+	'min-h-screen w-full max-w-appMWidth mx-auto px-[32px]'
 
 export default async function Home() {
 	const i18nDict = await getDictionary() //add other locales
@@ -20,24 +27,42 @@ export default async function Home() {
 					</span>
 				</h1>
 			</section>
+
 			<section
 				id={APP_SECTIONS.ABOUT}
-				className='min-h-screen grid place-items-center'
+				className={`${sectionBaseStyles} pt-[128px]`}
 			>
-				ABOUT
+				<h3 className='text-[24px] font-bold'>{i18nDict['about-title']}</h3>
+
+				<div className='flex justify-between gap-[64px] items-center'>
+					<Image src='avatar.svg' alt='Avatar' width={200} height={200}></Image>
+
+					<AboutDescription />
+				</div>
+
+				<div className='mt-[32px] flex flex-col items-center gap-[32px]'>
+					<h3 className='w-full text-[24px] font-bold text-start'>
+						{i18nDict['about-software']}
+					</h3>
+
+					<SoftwareCard />
+				</div>
 			</section>
+
 			<section
 				id={APP_SECTIONS.EXPERIENCE}
 				className='min-h-screen grid place-items-center'
 			>
 				EXPERIENCE
 			</section>
+
 			<section
 				id={APP_SECTIONS.PROJECTS}
 				className='min-h-screen grid place-items-center'
 			>
 				PROJECTS
 			</section>
+
 			<section
 				id={APP_SECTIONS.CONTACT}
 				className='min-h-screen grid place-items-center'

@@ -15,9 +15,14 @@ module.exports = {
 			},
 			colors: {
 				PRIMARY: '#6E07F3',
+				'PRIMARY-HOVER': '#9755ed',
 				BODY: '#F0EFF5',
 
 				'HOME-SUBHEADING': '#ADADAD',
+				'TEXT-DESCRIPTION': '#333',
+			},
+			maxWidth: {
+				appMWidth: '1400px',
 			},
 		},
 	},

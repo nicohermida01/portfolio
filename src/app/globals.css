@@ -7,3 +7,38 @@
 		@apply scroll-smooth;
 	}
 }
+
+@layer components {
+	.descriptionCard {
+		padding: 32px;
+		background-color: #fff;
+		border-radius: 40px;
+		position: relative;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.descriptionCard::before {
+		content: '';
+		position: absolute;
+		width: 70px;
+		height: 70px;
+		background-image: url('/polygon-shadow.svg');
+		background-repeat: no-repeat;
+		left: -25px;
+		top: calc(50% - 14px);
+		z-index: -1;
+	}
+	.descriptionCard::after {
+		content: '';
+		position: absolute;
+		background-color: #fff;
+		width: 10px;
+		height: 37px;
+		left: -3px;
+		top: calc(50% - 14px);
+	}
+
+	.defaultTransition {
+		transition: all ease 0.3s;
+	}
+}

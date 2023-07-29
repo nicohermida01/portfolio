@@ -6,5 +6,16 @@
 	"contact": "Contact",
 
 	"home-heading": "Nico Hermida",
-	"home-subheading": "Software developer"
+	"home-subheading": "Software developer",
+
+	"about-title": "About me",
+	"about-description#paragraph1": "Hey there!",
+	"about-description#paragraph2": "My name is Nicolas Hermida",
+	"about-description#paragraph3": "I’m a programmer, 23 years old, living in Argentina",
+	"about-description#paragraph4": "Ever since I was young, I’ve been fascinated by the world of computers and technology. Currently, I’m a university student pursuing a degree in Computer Science.",
+	"about-description#paragraph5": "In 2019, I began self-studying web development, learning the fundamentals of HTML, CSS, and Javascript. Today, I possess a strong command of an extensive stack of frameworks and packages, enabling me to apply them effectively in both frontend and backend projects. Below, you will find some of the projects I have done to put into practice and improve my skills.",
+	"about-description#paragraph6": "If you have a project in mind and believe that I have the necessary capabilities, please do not hesitate to get in touch!",
+	"about-description#paragraph7": "Thank you for visiting my portfolio, and I hope you enjoy exploring my projects!",
+	"about-cv": "Download CV",
+	"about-software": "Software I've used"
 }
