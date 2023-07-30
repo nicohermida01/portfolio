@@ -1,6 +1,5 @@
-import Link from 'next/link'
-
 import { getDictionary } from 'utils/dictionaries'
+import { DownloadCVBtn } from 'components/DownloadCVBtn'
 
 export async function AboutDescription() {
 	const i18nDict = await getDictionary()
@@ -25,12 +24,7 @@ export async function AboutDescription() {
 				<p>{i18nDict['about-description#paragraph7']}</p>
 			</div>
 
-			<Link
-				href='#'
-				className='inline-block bg-PRIMARY text-white py-[8px] px-[16px] rounded-[20px] font-bold mt-[16px] hover:bg-PRIMARY-HOVER defaultTransition'
-			>
-				{i18nDict['about-cv']}
-			</Link>
+			<DownloadCVBtn />
 		</div>
 	)
 }
