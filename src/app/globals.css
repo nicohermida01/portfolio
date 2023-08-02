@@ -9,6 +9,66 @@
 }
 
 @layer components {
+	.defaultTransition {
+		transition: all ease 0.3s;
+	}
+
+	.argGradient {
+		background: linear-gradient(
+			90deg,
+			rgba(120, 175, 224, 1) 0%,
+			rgba(255, 255, 255, 1) 50%,
+			rgba(120, 175, 224, 1) 100%
+		);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.primaryGradient {
+		background: linear-gradient(
+			180deg,
+			rgba(110, 7, 243, 1) 0%,
+			rgba(149, 84, 234, 1) 100%
+		);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.headingAnimation {
+		display: inline-block;
+	}
+
+	.headingAnimation:hover {
+		animation: wobble-vertical-right 1s linear both;
+	}
+
+	@keyframes wobble-vertical-right {
+		0%,
+		100% {
+			transform: translateY(0) rotate(0);
+			transform-origin: 50% 50%;
+		}
+		15% {
+			transform: translateY(-30px) rotate(6deg);
+		}
+		30% {
+			transform: translateY(15px) rotate(-6deg);
+		}
+		45% {
+			transform: translateY(-15px) rotate(3.6deg);
+		}
+		60% {
+			transform: translateY(9px) rotate(-2.4deg);
+		}
+		75% {
+			transform: translateY(-6px) rotate(1.2deg);
+		}
+	}
+
 	.descriptionCard {
 		padding: 32px;
 		background-color: #fff;
@@ -36,9 +96,5 @@
 		height: 37px;
 		left: -3px;
 		top: calc(50% - 14px);
-	}
-
-	.defaultTransition {
-		transition: all ease 0.3s;
 	}
 }

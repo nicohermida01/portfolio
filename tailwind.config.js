@@ -7,16 +7,25 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				'home-brackground': 'url("/background1.svg")',
-			},
 			fontFamily: {
 				sans: ['var(--font-sansation)'],
 			},
 			colors: {
 				PRIMARY: '#6E07F3',
+
+				PAYLOAD_PINK: '#f3078c',
+				PAYLOAD_BLUE: '#078cf3',
+
+				BODY: '#000000',
+
+				GRAY_1: '#333',
+				GRAY_1HOVER: '#222',
+
+				BLACK_1: '#18181B',
+
+				BASE_TEXT: '#ECEDEE',
+
 				'PRIMARY-HOVER': '#9755ed',
-				BODY: '#F0EFF5',
 
 				'HOME-SUBHEADING': '#ADADAD',
 				'TEXT-DESCRIPTION': '#333',

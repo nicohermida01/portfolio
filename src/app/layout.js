@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' className={`${SansationFont.variable} font-sans`}>
-			<body className='bg-BODY'>{children}</body>
+			<body className='bg-BODY text-BASE_TEXT'>{children}</body>
 		</html>
 	)
 }
