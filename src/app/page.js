@@ -29,11 +29,9 @@ const technologies = {
 	mongo: <MongoDBIcon width={iconSize} height={iconSize} />,
 }
 
-export default async function Home() {
+export default function Home() {
 	return (
 		<>
-			{/* <Navbar /> */}
-
 			<section className='min-h-screen flex flex-col justify-center max-w-appMWidth mx-auto px-6 relative'>
 				<HomeHeading />
 
