@@ -1,17 +1,14 @@
 import { HomeSection } from 'components/HomeSection'
+import { ProjectsSection } from 'components/ProjectsSection'
 
 export default function Home() {
 	return (
 		<>
 			<HomeSection />
 
-			<section
-				id='projects'
-				className='min-h-screen max-w-appMWidth mx-auto px-6 pt-20'
-			>
-				<h2 className='text-[2rem] font-bold'>Jobs and Projects</h2>
-				<div></div>
-			</section>
+			<ProjectsSection />
+
+			<footer className='mt-60'>footer</footer>
 		</>
 	)
 }

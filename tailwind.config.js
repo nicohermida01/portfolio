@@ -25,6 +25,7 @@ module.exports = {
 
 				BASE_TEXT: '#ECEDEE',
 				TEXT_SECONDARY1: '#BDBEBE',
+				TEXT_SECONDRAY2: '#7f7f7f',
 			},
 			maxWidth: {
 				appMWidth: '1400px',

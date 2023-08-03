@@ -30,14 +30,14 @@ const technologies = {
 export function HomeSection() {
 	return (
 		<section className='min-h-screen flex flex-col justify-center max-w-appMWidth mx-auto px-6 relative'>
-			<div className='homeBackground absolute left-0 h-screen w-[50%]'></div>
+			<div className='homeBackground absolute left-0 h-screen w-[50%] -z-10'></div>
 
 			<HomeHeading />
 
 			<div className='mt-10 flex gap-4 items-center'>
 				<Link
 					href='/contact'
-					className='bg-PAYLOAD_BLUE px-6 py-3 rounded-3xl flex items-center gap-1 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-once'
+					className='bg-PAYLOAD_BLUE px-6 py-3 rounded-3xl flex items-center gap-1 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
 				>
 					Contact me
 					<SendIcon width='20px' height='20px' stroke='#fff' />
