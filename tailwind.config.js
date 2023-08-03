@@ -24,11 +24,7 @@ module.exports = {
 				BLACK_1: '#18181B',
 
 				BASE_TEXT: '#ECEDEE',
-
-				'PRIMARY-HOVER': '#9755ed',
-
-				'HOME-SUBHEADING': '#ADADAD',
-				'TEXT-DESCRIPTION': '#333',
+				TEXT_SECONDARY1: '#BDBEBE',
 			},
 			maxWidth: {
 				appMWidth: '1400px',

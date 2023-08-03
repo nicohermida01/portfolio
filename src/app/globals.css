@@ -13,6 +13,15 @@
 		transition: all ease 0.3s;
 	}
 
+	.homeBackground {
+		background: rgba(110, 7, 243);
+		background: radial-gradient(
+			circle,
+			rgba(110, 7, 243, 0.17) 0%,
+			rgba(149, 84, 234, 0) 50%
+		);
+	}
+
 	.argGradient {
 		background: linear-gradient(
 			90deg,
