@@ -37,7 +37,7 @@ export const projectsAndJobs = [
 		label: 'Project 3',
 		description:
 			'Quick QR allows you to convert the URL you provide into a QR code, which can be scanned and shared.',
-		techs: ['HTML', 'CSS', 'Javascript'],
+		techs: ['HTML', 'CSS', 'JavaScript'],
 		codeUrl: 'https://github.com/nicohermida01/qr-code-generator',
 		websiteUrl: 'https://nicohermida01.github.io/qr-code-generator/',
 	},
@@ -48,7 +48,7 @@ export const projectsAndJobs = [
 		label: 'Project 4',
 		description:
 			'At Noob Dev, you will find information and hands-on exercises on a wide range of programming concepts taught at the university level.',
-		techs: ['HTML', 'CSS', 'Javascript'],
+		techs: ['HTML', 'CSS', 'JavaScript'],
 		codeUrl: 'https://github.com/nicohermida01/linked-list',
 		websiteUrl: 'https://nicohermida01.github.io/linked-list/',
 	},

@@ -7,8 +7,6 @@ export default function Home() {
 			<HomeSection />
 
 			<ProjectsSection />
-
-			<footer className='mt-60'>footer</footer>
 		</>
 	)
 }
