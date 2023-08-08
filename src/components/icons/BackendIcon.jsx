@@ -8,7 +8,7 @@ export function BackendIcon(props) {
 			width='800px'
 			height='800px'
 			viewBox='0 0 1800 1800'
-			enable-background='new 0 0 1800 1800'
+			enableBackground='new 0 0 1800 1800'
 			{...props}
 		>
 			<path

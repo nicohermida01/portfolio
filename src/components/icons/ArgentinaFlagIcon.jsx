@@ -10,14 +10,14 @@ export function ArgentinaFlagIcon(props) {
 				x='7.286'
 				y='173.1'
 				style={{
-					fill: '#fff',
+					fill: '#ffffff',
 				}}
 				width='497.43'
 				height='165.81'
 			/>
 			<path
 				style={{
-					fill: '#F2A643',
+					fill: '#f2a643',
 				}}
 				d='M256,210.403c-25.142,0-45.597,20.456-45.597,45.597s20.456,45.597,45.597,45.597
 	s45.597-20.456,45.597-45.597S281.142,210.403,256,210.403z'
@@ -26,9 +26,8 @@ export function ArgentinaFlagIcon(props) {
 				<rect
 					x='7.286'
 					y='338.9'
-					F2A643
 					style={{
-						fill: '#3DB4EA',
+						fill: '#3db4ea',
 					}}
 					width='497.43'
 					height='165.81'
@@ -37,7 +36,7 @@ export function ArgentinaFlagIcon(props) {
 					x='7.286'
 					y='7.286'
 					style={{
-						fill: '#3DB4EA',
+						fill: '#3db4ea',
 					}}
 					width='497.43'
 					height='165.81'

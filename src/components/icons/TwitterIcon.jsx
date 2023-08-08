@@ -9,7 +9,7 @@ export function TwitterIcon(props) {
 			viewBox='0 0 512 512'
 			{...props}
 		>
-			<g id='7935ec95c421cee6d86eb22ecd12f847'>
+			<g>
 				<path
 					style={{ display: 'inline' }}
 					d='M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565
