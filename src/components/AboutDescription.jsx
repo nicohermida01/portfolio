@@ -4,18 +4,18 @@ export async function AboutDescription() {
 	return (
 		<div className='descriptionCard'>
 			<div className='flex flex-col gap-[8px] text-TEXT-DESCRIPTION'>
-				<div className='text-black'>
+				<div className=''>
 					<p className='font-bold text-[26px]'>Hey there!</p>
 					<p className='text-[20px] leading-[12px]'>
 						My name is Nicolas Hermida
 					</p>
 					<p className='text-[18px]'>
-						I&#39m a programmer, 23 years old, living in Argentina
+						I&apos;m a programmer, 23 years old, living in Argentina
 					</p>
 				</div>
 				<p>
-					Ever since I was young, I&#39ve been fascinated by the world of
-					computers and technology. Currently, I&#39m a university student
+					Ever since I was young, I&apos;ve been fascinated by the world of
+					computers and technology. Currently, I&apos;m a university student
 					pursuing a degree in Computer Science.
 				</p>
 				<p>
@@ -35,8 +35,6 @@ export async function AboutDescription() {
 					projects!
 				</p>
 			</div>
-
-			<DownloadCVBtn />
 		</div>
 	)
 }

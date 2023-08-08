@@ -30,7 +30,7 @@ const technologies = {
 export function HomeSection() {
 	return (
 		<section className='min-h-screen flex flex-col justify-center max-w-appMWidth mx-auto px-6 relative'>
-			<div className='homeBackground absolute left-0 h-screen w-[50%] -z-10'></div>
+			<div className='homeBackground absolute left-[-400px] h-screen w-[100%] -z-10'></div>
 
 			<HomeHeading />
 

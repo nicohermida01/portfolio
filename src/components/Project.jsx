@@ -23,8 +23,9 @@ export function Project({
 			>
 				{label}
 			</span>
-			<div className='w-full flex flex-col justify-center items-center'>
-				<div className='homeBackground absolute left-[-200px] h-screen w-full -z-10'></div>
+
+			<div className='w-full flex flex-col justify-center items-center relative'>
+				<div className='homeBackground absolute left-0 h-screen w-full -z-10'></div>
 
 				<h3 className='text-[2rem] font-bold'>{title}</h3>
 
