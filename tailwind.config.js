@@ -26,12 +26,15 @@ module.exports = {
 				BASE_TEXT: '#ECEDEE',
 				TEXT_SECONDARY1: '#BDBEBE',
 				TEXT_SECONDRAY2: '#7f7f7f',
+
+				TWITTER: '#1D9BF0',
+				INSTAGRAM: '#CB098C',
+				LINKEDIN: '#126BC4',
 			},
 			maxWidth: {
 				appMWidth: '1400px',
 			},
 		},
 	},
-
 	plugins: [require('tailwindcss-animated')],
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { AppLogo } from './AppLogo'
+import { AppLogo } from './icons/AppLogo'
 
 export async function Navbar() {
 	return (

@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { projectsAndJobs } from 'ssot/projectsAndJobs'
-import { LinkedInIcon } from './LinkedinIcon'
-import { CodeIcon } from './CodeIcon'
-import { GithubIcon } from './GithubIcon'
+import { LinkedInIcon } from 'components/icons/LinkedinIcon'
+import { CodeIcon } from 'components/icons/CodeIcon'
+import { GithubIcon } from 'components/icons/GithubIcon'
 
 export function ProjectsSection() {
 	return (
@@ -16,16 +16,15 @@ export function ProjectsSection() {
 				{projectsAndJobs.map((elem, i) => (
 					<div
 						key={i}
-						className='flex justify-between gap-12 even:flex-row-reverse'
+						className='flex justify-between gap-12 even:flex-row-reverse relative'
 					>
-						<div className='w-full relative flex flex-col justify-center'>
+						<span
+							className={`w-max text-[12px] px-4 py-2 rounded-full flex bg-PRIMARY absolute top-[-80px] left-[calc(50%-30px)]`}
+						>
+							{elem.label}
+						</span>
+						<div className='w-full flex flex-col justify-center items-center'>
 							<div className='homeBackground absolute left-[-200px] h-screen w-full -z-10'></div>
-
-							<span
-								className={`w-max text-[12px] px-4 py-2 rounded-full flex bg-PRIMARY absolute top-[-50px] left-0`}
-							>
-								{elem.label}
-							</span>
 
 							<h3 className='text-[2rem] font-bold'>{elem.title}</h3>
 
@@ -35,7 +34,7 @@ export function ProjectsSection() {
 								</span>
 							)}
 
-							<p className='max-w-sm text-TEXT_SECONDARY1 my-4'>
+							<p className='max-w-sm text-TEXT_SECONDARY1 my-4 text-center'>
 								{elem.description}
 							</p>
 

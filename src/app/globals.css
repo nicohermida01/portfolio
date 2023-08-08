@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--primary-color: #6e07f3;
+	--base-text-color: #ecedee;
+}
+
 @layer base {
 	html {
 		@apply scroll-smooth;
@@ -9,6 +14,42 @@
 }
 
 @layer components {
+	.spinnerLoader {
+		width: 22px;
+		transform-origin: center;
+		animation: rotateSpinner 2s linear infinite;
+	}
+
+	.spinnerLoader circle {
+		fill: none;
+		stroke: var(--base-text-color);
+		stroke-width: 2;
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+		stroke-linecap: round;
+		animation: dashSpinner 1.5s ease-in-out infinite;
+	}
+
+	@keyframes rotateSpinner {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes dashSpinner {
+		0% {
+			stroke-dasharray: 1, 200;
+			stroke-dashoffset: 0;
+		}
+		50% {
+			stroke-dasharray: 90, 200;
+			stroke-dashoffset: -35px;
+		}
+		100% {
+			stroke-dashoffset: -125px;
+		}
+	}
+
 	.defaultTransition {
 		transition: all ease 0.3s;
 	}
@@ -47,7 +88,7 @@
 		-webkit-text-fill-color: transparent;
 	}
 
-	.headingAnimation {
+	/* .headingAnimation {
 		display: inline-block;
 	}
 
@@ -105,5 +146,5 @@
 		height: 37px;
 		left: -3px;
 		top: calc(50% - 14px);
-	}
+	} */
 }

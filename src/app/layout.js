@@ -2,6 +2,7 @@ import localFont from 'next/font/local'
 
 import 'app/globals.css'
 import { Navbar } from 'components/Navbar'
+import { ToastWrapper } from 'components/ToastWrapper'
 
 const SansationFont = localFont({
 	src: [
@@ -30,6 +31,9 @@ export default function RootLayout({ children }) {
 		<html lang='en' className={`${SansationFont.variable} font-sans`}>
 			<body className='bg-BODY text-BASE_TEXT'>
 				<Navbar />
+
+				<ToastWrapper />
+
 				<main>{children}</main>
 			</body>
 		</html>
