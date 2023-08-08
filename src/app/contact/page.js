@@ -10,7 +10,7 @@ const iconSize = '20px'
 
 export default function Contact() {
 	return (
-		<section className='min-h-screen max-w-appMWidth mx-auto px-6 text-BASE_TEXT flex flex-col items-center justify-center relative'>
+		<section className='min-h-screen max-w-appMWidth mx-auto px-6 flex flex-col items-center justify-center relative'>
 			<div className='homeBackground absolute top-[-150px] h-screen w-[50%] -z-10'></div>
 
 			<h2 className='text-[2rem] font-bold flex flex-col items-center'>

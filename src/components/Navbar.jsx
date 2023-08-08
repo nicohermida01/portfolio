@@ -22,7 +22,7 @@ export async function Navbar() {
 						</li>
 						<li>
 							<Link
-								href='contact'
+								href='/contact'
 								className='text-TEXT_SECONDARY1 hover:underline'
 							>
 								Contact
