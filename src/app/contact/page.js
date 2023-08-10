@@ -28,7 +28,11 @@ export default function Contact() {
 				<span>Find me on these online spaces too!</span>
 
 				<div className='flex items-center gap-8 mt-6'>
-					<Link href='https://github.com/nicohermida01' target='_blank'>
+					<Link
+						href='https://github.com/nicohermida01'
+						aria-label='Go to my github profile'
+						target='_blank'
+					>
 						<GithubIcon
 							className={`${iconClass} fill-TEXT_SECONDRAY2 hover:fill-BASE_TEXT defaultTransition`}
 						/>
@@ -37,19 +41,28 @@ export default function Contact() {
 					<Link
 						href='https://www.linkedin.com/in/nico-hermida/'
 						target='_blank'
+						aria-label='Go to my linkedin profile'
 					>
 						<LinkedInIcon
 							className={`${iconClass} fill-TEXT_SECONDRAY2 hover:fill-LINKEDIN defaultTransition`}
 						/>
 					</Link>
 
-					<Link href='https://www.instagram.com/nicohermida1/' target='_blank'>
+					<Link
+						href='https://www.instagram.com/nicohermida1/'
+						aria-label='Go to my instagram profile'
+						target='_blank'
+					>
 						<InstagramIcon
 							className={`${iconClass} fill-TEXT_SECONDRAY2 hover:fill-INSTAGRAM defaultTransition`}
 						/>
 					</Link>
 
-					<Link href='https://twitter.com/nico_hermida' target='_blank'>
+					<Link
+						href='https://twitter.com/nico_hermida'
+						aria-label='Go to my twitter profile'
+						target='_blank'
+					>
 						<TwitterIcon
 							className={`${iconClass} fill-TEXT_SECONDRAY2 hover:fill-TWITTER defaultTransition`}
 						/>

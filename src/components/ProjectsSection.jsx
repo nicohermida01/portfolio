@@ -29,6 +29,7 @@ export function ProjectsSection() {
 				And many more on my GitHub profile
 				<Link
 					href='https://github.com/nicohermida01'
+					aria-label='Go to github profile'
 					target='_blank'
 					className='animate-wiggle-more animate-infinite'
 				>

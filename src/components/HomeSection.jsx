@@ -38,6 +38,7 @@ export function HomeSection() {
 				<div className='mt-10 flex gap-4 items-center sm:text-[12px] lg:justify-center 2sm:flex-col sm:mt-[20px]'>
 					<Link
 						href='/contact'
+						aria-label='Go to contact page'
 						className='bg-PAYLOAD_BLUE px-6 py-3 rounded-3xl flex items-center gap-1 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
 					>
 						Contact me
@@ -46,6 +47,7 @@ export function HomeSection() {
 
 					<Link
 						href='/nicohermida-cv-en.pdf'
+						aria-label='Download my curriculum'
 						target='_blank'
 						className='border-GRAY_1 border-2 px-6 py-3 rounded-3xl defaultTransition hover:border-GRAY_1HOVER'
 					>
@@ -69,6 +71,7 @@ export function HomeSection() {
 
 			<Link
 				href='#projects'
+				aria-label='Go to projects section'
 				className='w-max flex items-center gap-2 absolute bottom-10 text-TEXT_SECONDARY1 animate-bounce animate-infinite animate-duration-[1300ms] sm:text-[12px]'
 			>
 				View projects

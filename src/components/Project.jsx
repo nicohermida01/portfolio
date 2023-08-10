@@ -54,6 +54,7 @@ export function Project({
 						{linkedinUrl && (
 							<Link
 								href={linkedinUrl}
+								aria-label='Go to linkedin profile'
 								target='_blank'
 								className='bg-PAYLOAD_BLUE px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
 							>
@@ -65,6 +66,7 @@ export function Project({
 						{codeUrl && (
 							<Link
 								href={codeUrl}
+								aria-label='Go to github repository'
 								target='_blank'
 								className='bg-PAYLOAD_BLUE px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
 							>
@@ -76,6 +78,7 @@ export function Project({
 						{websiteUrl && (
 							<Link
 								href={websiteUrl}
+								aria-label='go to project website'
 								target='_blank'
 								className='border-GRAY_1 border-2 px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold defaultTransition hover:border-GRAY_1HOVER'
 							>
