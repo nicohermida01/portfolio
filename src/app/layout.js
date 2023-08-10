@@ -34,7 +34,9 @@ export default function RootLayout({ children }) {
 
 				<ToastWrapper />
 
-				<main>{children}</main>
+				<main className='min-h-screen w-full max-w-appMWidth mx-auto px-8'>
+					{children}
+				</main>
 			</body>
 		</html>
 	)

@@ -47,10 +47,10 @@ export function ContactForm() {
 
 	return (
 		<form
-			className='w-[60%] my-16 flex flex-col items-center gap-8'
+			className='w-[60%] my-16 flex flex-col items-center gap-8 sm:w-full'
 			onSubmit={handleSubmit}
 		>
-			<div className='w-full flex gap-8'>
+			<div className='w-full flex gap-8 sm:flex-col'>
 				<InputField
 					label='Your Name'
 					type='text'
@@ -72,7 +72,7 @@ export function ContactForm() {
 				/>
 			</div>
 
-			<div className='flex flex-col w-full'>
+			<div className='flex flex-col w-full sm:text-[12px] sm:text-center'>
 				<label htmlFor='message' className='text-TEXT_SECONDRAY2'>
 					Your Message
 				</label>
@@ -86,13 +86,13 @@ export function ContactForm() {
 				></textarea>
 			</div>
 
-			<button className='bg-PAYLOAD_BLUE h-[40px] w-[194px] flex items-center justify-center gap-2 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'>
+			<button className='bg-PAYLOAD_BLUE h-[40px] w-[194px] flex items-center justify-center gap-2 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite sm:text-[12px]'>
 				{isLoading ? (
 					<SpinnerLoaderIcon />
 				) : (
 					<>
 						Send
-						<SendIcon width='20px' height='20px' className='stroke-BASE_TEXT' />
+						<SendIcon className='h-[20px] w-[20px] stroke-BASE_TEXT sm:h-[16px] sm:w-[16px]' />
 					</>
 				)}
 			</button>

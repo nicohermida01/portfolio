@@ -8,7 +8,7 @@ export function InputField({
 	onChange,
 }) {
 	return (
-		<div className='flex flex-col w-full'>
+		<div className='flex flex-col w-full sm:text-[12px] sm:text-center'>
 			<label htmlFor={id} className='text-TEXT_SECONDRAY2'>
 				{label}
 			</label>

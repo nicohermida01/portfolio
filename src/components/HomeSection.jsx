@@ -13,49 +13,54 @@ import { MongoDBIcon } from 'components/icons/MongoDBIcon'
 import { SendIcon } from 'components/icons/SendIcon'
 import { ScrollDownIcon } from 'components/icons/ScrollDownIcon'
 
-const iconSize = '50px'
+const iconClassName = 'w-[50px] h-[50px] sm:w-[24px] sm:h-[24px]'
 
-const technologies = {
-	js: <JavascriptIcon width={iconSize} height={iconSize} />,
-	ts: <TypescriptIcon width={iconSize} height={iconSize} />,
-	py: <PythonIcon width={iconSize} height={iconSize} />,
-	java: <JavaIcon width={iconSize} height={iconSize} />,
-	go: <GolangIcon width={iconSize} height={iconSize} />,
-	next: <NextjsIcon width={iconSize} height={iconSize} />,
-	react: <ReactIcon width={iconSize} height={iconSize} />,
-	nest: <NestjsIcon width={iconSize} height={iconSize} />,
-	mongo: <MongoDBIcon width={iconSize} height={iconSize} />,
+const skills = {
+	js: <JavascriptIcon className={iconClassName} />,
+	ts: <TypescriptIcon className={iconClassName} />,
+	py: <PythonIcon className={iconClassName} />,
+	java: <JavaIcon className={iconClassName} />,
+	go: <GolangIcon className={iconClassName} />,
+	next: <NextjsIcon className={iconClassName} />,
+	react: <ReactIcon className={iconClassName} />,
+	nest: <NestjsIcon className={iconClassName} />,
+	mongo: <MongoDBIcon className={iconClassName} />,
 }
 
 export function HomeSection() {
 	return (
-		<section className='min-h-screen flex flex-col justify-center max-w-appMWidth mx-auto px-6 relative'>
-			<div className='homeBackground absolute left-[-400px] h-screen w-[100%] -z-10'></div>
+		<section className='min-h-screen w-full relative flex items-center lg:flex-col lg:justify-center sm:gap-[30px] lg:gap-[70px]'>
+			<div className='homeBackground absolute left-[-400px] h-screen w-[100%] -z-10 lg:left-0 sm:!top-[-170px] lg:top-[-210px]'></div>
 
-			<HomeHeading />
+			<div className='w-[70%] lg:w-full'>
+				<HomeHeading />
 
-			<div className='mt-10 flex gap-4 items-center'>
-				<Link
-					href='/contact'
-					className='bg-PAYLOAD_BLUE px-6 py-3 rounded-3xl flex items-center gap-1 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
-				>
-					Contact me
-					<SendIcon width='20px' height='20px' stroke='#fff' />
-				</Link>
+				<div className='mt-10 flex gap-4 items-center sm:text-[12px] lg:justify-center 2sm:flex-col sm:mt-[20px]'>
+					<Link
+						href='/contact'
+						className='bg-PAYLOAD_BLUE px-6 py-3 rounded-3xl flex items-center gap-1 [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
+					>
+						Contact me
+						<SendIcon className='h-[20px] w-[20px] stroke-BASE_TEXT sm:h-[16px] sm:w-[16px]' />
+					</Link>
 
-				<Link
-					href='/nicohermida-cv-en.pdf'
-					target='_blank'
-					className='border-GRAY_1 border-2 px-6 py-3 rounded-3xl defaultTransition hover:border-GRAY_1HOVER'
-				>
-					Download CV
-				</Link>
+					<Link
+						href='/nicohermida-cv-en.pdf'
+						target='_blank'
+						className='border-GRAY_1 border-2 px-6 py-3 rounded-3xl defaultTransition hover:border-GRAY_1HOVER'
+					>
+						Download CV
+					</Link>
+				</div>
 			</div>
 
-			<div className='flex gap-6 flex-wrap items-center justify-center absolute right-0 w-[400px]'>
-				{Object.values(technologies).map((icon, i) => {
+			<div className='w-[30%] grid grid-cols-3 gap-[16px] place-items-center lg:w-full'>
+				{Object.values(skills).map((icon, i) => {
 					return (
-						<div key={i} className='bg-BLACK_1 p-6 w-max rounded-xl'>
+						<div
+							key={i}
+							className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md'
+						>
 							{icon}
 						</div>
 					)
@@ -64,14 +69,10 @@ export function HomeSection() {
 
 			<Link
 				href='#projects'
-				className='w-max flex gap-2 absolute bottom-10 text-TEXT_SECONDARY1 animate-bounce animate-infinite animate-duration-[1300ms]'
+				className='w-max flex items-center gap-2 absolute bottom-10 text-TEXT_SECONDARY1 animate-bounce animate-infinite animate-duration-[1300ms] sm:text-[12px]'
 			>
 				View projects
-				<ScrollDownIcon
-					width='24px'
-					height='24px'
-					className='stroke-TEXT_SECONDARY1'
-				/>
+				<ScrollDownIcon className='h-[24px] w-[24px] stroke-TEXT_SECONDARY1 sm:w-[18px] sm:h-[18px]' />
 			</Link>
 		</section>
 	)

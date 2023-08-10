@@ -35,6 +35,15 @@ module.exports = {
 				appMWidth: '1400px',
 			},
 		},
+		screens: {
+			'2sm': { max: '300px' },
+			sm: { max: '576px' },
+			md: { max: '768px' },
+			lg: { max: '992px' },
+			xl: { max: '1200px' },
+			'2xl': { max: '1500px' },
+			'3xl': '1800px',
+		},
 	},
 	plugins: [require('tailwindcss-animated')],
 }
