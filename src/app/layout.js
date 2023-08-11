@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import 'app/globals.css'
 import { Navbar } from 'components/Navbar'
 import { ToastWrapper } from 'components/ToastWrapper'
+import { metaDescription, metaKeywords, metaTitle } from 'ssot/metadata'
 
 const SansationFont = localFont({
 	src: [
@@ -21,9 +22,15 @@ const SansationFont = localFont({
 })
 
 export const metadata = {
-	title: 'Nico Hermida',
-	description:
-		'Explora mi portfolio como desarrollador de software, donde muestro mis proyectos y habilidades en el desarrollo de aplicaciones web y móviles',
+	title: metaTitle,
+	description: metaDescription,
+	keywords: metaKeywords,
+	openGraph: {
+		title: metaTitle,
+		description: metaDescription,
+		type: 'website',
+		url: 'www.nicohermida.com',
+	},
 }
 
 export default function RootLayout({ children }) {
