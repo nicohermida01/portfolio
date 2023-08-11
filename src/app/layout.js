@@ -23,6 +23,7 @@ const SansationFont = localFont({
 
 export const metadata = {
 	title: metaTitle,
+	viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 	description: metaDescription,
 	keywords: metaKeywords,
 	openGraph: {
