@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server'
 import { sendEmail } from 'services/mail.service'
 
+export async function GET() {
+	return NextResponse.json({
+		message: 'Hello from /api/email',
+	})
+}
+
 export async function POST(req) {
 	const body = await req.json()
 
