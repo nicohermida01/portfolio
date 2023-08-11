@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #6e07f3;
+	--base-text-color: #ecedee;
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+}
+
+@layer components {
+	.spinnerLoader {
+		width: 22px;
+		transform-origin: center;
+		animation: rotateSpinner 2s linear infinite;
+	}
+
+	.spinnerLoader circle {
+		fill: none;
+		stroke: var(--base-text-color);
+		stroke-width: 2;
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+		stroke-linecap: round;
+		animation: dashSpinner 1.5s ease-in-out infinite;
+	}
+
+	@keyframes rotateSpinner {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes dashSpinner {
+		0% {
+			stroke-dasharray: 1, 200;
+			stroke-dashoffset: 0;
+		}
+		50% {
+			stroke-dasharray: 90, 200;
+			stroke-dashoffset: -35px;
+		}
+		100% {
+			stroke-dashoffset: -125px;
+		}
+	}
+
+	.defaultTransition {
+		transition: all ease 0.3s;
+	}
+
+	.homeBackground {
+		background: rgba(110, 7, 243);
+		background: radial-gradient(
+			circle,
+			rgba(110, 7, 243, 0.17) 0%,
+			rgba(149, 84, 234, 0) 50%
+		);
+	}
+
+	.argGradient {
+		background: linear-gradient(
+			90deg,
+			rgba(120, 175, 224, 1) 0%,
+			rgba(255, 255, 255, 1) 50%,
+			rgba(120, 175, 224, 1) 100%
+		);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.primaryGradient {
+		background: linear-gradient(
+			180deg,
+			rgba(110, 7, 243, 1) 0%,
+			rgba(149, 84, 234, 1) 100%
+		);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
