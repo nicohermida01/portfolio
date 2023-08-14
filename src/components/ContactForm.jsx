@@ -23,7 +23,7 @@ export function ContactForm() {
 		e.preventDefault()
 
 		setIsLoading(true)
-		fetch('https://nicohermida.com/api/email', {
+		fetch('/api/email', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
