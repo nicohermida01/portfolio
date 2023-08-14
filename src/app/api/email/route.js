@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { sendEmail } from 'services/mail.service'
+import { emailService } from 'services/mail.service'
 
 export async function GET() {
 	return NextResponse.json({
@@ -8,19 +8,22 @@ export async function GET() {
 }
 
 export async function POST(req) {
-	const body = await req.json()
-
-	if (!body.fromName || !body.fromEmail || !body.message) {
-		return NextResponse.json(
-			{ error: 'fromName, fromEmail or message properties are missing' },
-			{ status: 400 }
-		)
-	}
-
 	try {
-		await sendEmail(body)
+		const body = await req.json()
 
-		return NextResponse.json({ message: 'Email sent successfully' })
+		if (!body.fromName || !body.fromEmail || !body.message) {
+			return NextResponse.json(
+				{ error: 'fromName, fromEmail or message properties are missing' },
+				{ status: 400 }
+			)
+		}
+
+		await emailService.sendEmail(body)
+
+		return NextResponse.json(
+			{ message: 'Email sent successfully' },
+			{ status: 200 }
+		)
 	} catch (error) {
 		console.error(error)
 		return NextResponse.json(

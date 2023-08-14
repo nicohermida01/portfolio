@@ -35,8 +35,13 @@ export function ContactForm() {
 			}),
 		})
 			.then(res => {
-				toast.success('Email sent successfully!')
-				clearInputs()
+				if (res.status === 200) {
+					toast.success('Email sent successfully!')
+					clearInputs()
+				} else {
+					console.error(res)
+					toast.error('Someting went wrong')
+				}
 			})
 			.catch(err => {
 				console.error(err)

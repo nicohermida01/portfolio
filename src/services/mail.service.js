@@ -1,29 +1,25 @@
 import 'server-only'
+import { Resend } from 'resend'
 
-import nodemailer from 'nodemailer'
+import { EmailTemplate } from 'components/EmailTemplate'
 
-const NODEMAILER_EMAIL = process.env.NODEMAILER_EMAIL
-const NODEMAILER_PW = process.env.NODEMAILER_PW
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-export async function sendEmail(input) {
-	const transporter = nodemailer.createTransport({
-		service: 'gmail',
-		auth: {
-			user: NODEMAILER_EMAIL,
-			pass: NODEMAILER_PW,
-		},
+const sendEmail = async input => {
+	const data = await resend.emails.send({
+		from: 'Acme <noreply@nicohermida.com>',
+		to: ['hermida.nicolas101@gmail.com'],
+		subject: `Portfolio | New message from: ${input.name}`,
+		react: EmailTemplate({
+			name: input.fromName,
+			mail: input.fromEmail,
+			message: input.message,
+		}),
 	})
 
-	const mailOptions = {
-		from: input.fromEmail,
-		to: NODEMAILER_EMAIL,
-		subject: 'Portfolio new message',
-		html: `<div>
-			<p>From: ${input.fromEmail}</p>
-			<p>Name: ${input.fromName}</p>
-			<p>Message: ${input.message}</p>
-		</div>`,
-	}
+	return data
+}
 
-	return await transporter.sendMail(mailOptions)
+export const emailService = {
+	sendEmail,
 }
