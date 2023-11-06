@@ -46,7 +46,7 @@ export function HomeSection() {
 					</Link>
 
 					<Link
-						href='/nicohermida-cv-en.pdf'
+						href='/RESUME_nicolashermida.pdf'
 						aria-label='Download my curriculum'
 						target='_blank'
 						className='border-GRAY_1 border-2 px-6 py-3 rounded-3xl defaultTransition hover:border-GRAY_1HOVER'
