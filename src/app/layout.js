@@ -3,7 +3,12 @@ import localFont from 'next/font/local'
 import 'app/globals.css'
 import { Navbar } from 'components/Navbar'
 import { ToastWrapper } from 'components/ToastWrapper'
-import { metaDescription, metaKeywords, metaTitle } from 'ssot/metadata'
+import {
+	cannonicalUrl,
+	metaDescription,
+	metaKeywords,
+	metaTitle,
+} from 'ssot/metadata'
 
 const SansationFont = localFont({
 	src: [
@@ -26,11 +31,14 @@ export const metadata = {
 	viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 	description: metaDescription,
 	keywords: metaKeywords,
+	alternates: {
+		canonical: cannonicalUrl,
+	},
 	openGraph: {
 		title: metaTitle,
 		description: metaDescription,
 		type: 'website',
-		url: 'www.nicohermida.com',
+		url: cannonicalUrl,
 	},
 }
 

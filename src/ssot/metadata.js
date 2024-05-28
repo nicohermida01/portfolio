@@ -5,3 +5,5 @@ export const metaDescription =
 
 export const metaKeywords =
 	'portfolio, developer, backend, frontend, nico, nico hermida, hermida, software, javascript, nextjs, react'
+
+export const cannonicalUrl = 'https://nicohermida.com/'
