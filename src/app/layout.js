@@ -39,6 +39,12 @@ export const metadata = {
 		description: metaDescription,
 		type: 'website',
 		url: cannonicalUrl,
+		images: [
+			{
+				url: `${cannonicalUrl}/n.png`,
+				alt: 'Nico Hermida logo',
+			},
+		],
 	},
 }
 
