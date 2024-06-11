@@ -14,6 +14,77 @@
 }
 
 @layer components {
+	.floating-one {
+		animation: float-one 5s ease-in-out infinite;
+	}
+
+	.floating-two {
+		animation: float-two 5s ease-in-out infinite;
+	}
+
+	.floating-three {
+		animation: float-three 5s ease-in-out infinite;
+	}
+
+	.floating-four {
+		animation: float-four 5s ease-in-out infinite;
+	}
+	.floating-five {
+		animation: float-five 5s ease-in-out infinite;
+	}
+
+	@keyframes float-one {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+
+	@keyframes float-two {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(10px);
+		}
+	}
+	@keyframes float-three {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+	@keyframes float-four {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(20px);
+		}
+	}
+	@keyframes float-five {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(30px);
+		}
+	}
+
 	.spinnerLoader {
 		width: 22px;
 		transform-origin: center;

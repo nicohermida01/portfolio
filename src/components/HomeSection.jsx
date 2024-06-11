@@ -15,18 +15,6 @@ import { ScrollDownIcon } from 'components/icons/ScrollDownIcon'
 
 const iconClassName = 'w-[50px] h-[50px] sm:w-[24px] sm:h-[24px]'
 
-const skills = {
-	js: <JavascriptIcon className={iconClassName} />,
-	ts: <TypescriptIcon className={iconClassName} />,
-	py: <PythonIcon className={iconClassName} />,
-	java: <JavaIcon className={iconClassName} />,
-	go: <GolangIcon className={iconClassName} />,
-	next: <NextjsIcon className={iconClassName} />,
-	react: <ReactIcon className={iconClassName} />,
-	nest: <NestjsIcon className={iconClassName} />,
-	mongo: <MongoDBIcon className={iconClassName} />,
-}
-
 export function HomeSection() {
 	return (
 		<section className='min-h-screen w-full relative flex items-center lg:flex-col lg:justify-center sm:gap-[30px] lg:gap-[70px]'>
@@ -57,16 +45,41 @@ export function HomeSection() {
 			</div>
 
 			<div className='w-[30%] grid grid-cols-3 gap-[16px] place-items-center lg:w-full'>
-				{Object.values(skills).map((icon, i) => {
-					return (
-						<div
-							key={i}
-							className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md'
-						>
-							{icon}
-						</div>
-					)
-				})}
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-three '>
+					<JavascriptIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-one '>
+					<TypescriptIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-three '>
+					<PythonIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-two '>
+					<JavaIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-four '>
+					<GolangIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-one '>
+					<NextjsIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-four '>
+					<ReactIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-five '>
+					<NestjsIcon className={iconClassName} />
+				</div>
+
+				<div className='w-max h-max bg-BLACK_1 p-6 rounded-xl grid justify-center place-items-center sm:p-[18px] sm:rounded-md floating-two '>
+					<MongoDBIcon className={iconClassName} />
+				</div>
 			</div>
 
 			<Link
