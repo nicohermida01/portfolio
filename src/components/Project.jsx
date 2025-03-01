@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import Image from 'next/image'
 
-import { CodeIcon } from 'components/icons/CodeIcon'
-import { LinkedInIcon } from 'components/icons/LinkedinIcon'
+import { VisitProjectButton } from 'components/VisitProjectButton'
+import { ViewCodeButton } from 'components/ViewCodeButton'
+import { LinkedinButton } from 'components/LinkedinButton'
 
 export function Project({
 	label,
@@ -15,11 +15,12 @@ export function Project({
 	websiteUrl,
 	imgUrl,
 	imgAlt,
+	codeButtonPrimary,
 }) {
 	return (
 		<div className='flex flex-col items-center gap-[50px] [&>div]:even:flex-row-reverse lg:[&>div]:even:flex-col sm:gap-[20px]'>
 			<span
-				className={`w-max text-[16px] px-4 py-2 rounded-full bg-PRIMARY sm:text-[12px] sm:mb-[20px]`}
+				className={`w-max text-[16px] px-4 py-2 rounded-full bg-PRIMARY sm:text-[12px] sm:mb-[20px] inline-block relative`}
 			>
 				{label}
 			</span>
@@ -51,39 +52,15 @@ export function Project({
 					)}
 
 					<div className='mt-8 text-[14px] flex items-center gap-4 sm:text-[12px] 2sm:flex-col'>
-						{linkedinUrl && (
-							<Link
-								href={linkedinUrl}
-								aria-label='Go to linkedin profile'
-								target='_blank'
-								className='bg-PAYLOAD_BLUE px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
-							>
-								<LinkedInIcon className='h-[20px] w-[20px] fill-BASE_TEXT sm:w-[18px] sm:h-[18px]' />
-								LinkedIn
-							</Link>
-						)}
+						{linkedinUrl && <LinkedinButton url={linkedinUrl} />}
 
-						{codeUrl && (
-							<Link
-								href={codeUrl}
-								aria-label='Go to github repository'
-								target='_blank'
-								className='bg-PAYLOAD_BLUE px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold [&:hover>svg]:animate-wiggle-more [&:hover>svg]:animate-infinite'
-							>
-								<CodeIcon className='h-[20px] w-[20px] stroke-BASE_TEXT sm:w-[18px] sm:h-[18px]' />
-								View code
-							</Link>
-						)}
+						{codeUrl && <ViewCodeButton url={codeUrl} />}
 
 						{websiteUrl && (
-							<Link
-								href={websiteUrl}
-								aria-label='go to project website'
-								target='_blank'
-								className='border-GRAY_1 border-2 px-6 py-3 rounded-sm flex items-center gap-2 w-max font-bold defaultTransition hover:border-GRAY_1HOVER'
-							>
-								Visit project
-							</Link>
+							<VisitProjectButton
+								url={websiteUrl}
+								isPrimary={codeButtonPrimary}
+							/>
 						)}
 					</div>
 				</div>
