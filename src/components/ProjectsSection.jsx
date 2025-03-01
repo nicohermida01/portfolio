@@ -9,19 +9,7 @@ export function ProjectsSection() {
 		<section id='projects' className='py-40 sm:py-[100px]'>
 			<div className='flex flex-col gap-[200px] sm:gap-[100px] '>
 				{projectsAndJobs.map((elem, i) => (
-					<Project
-						key={i}
-						label={elem.label}
-						title={elem.title}
-						helper={elem.helper}
-						description={elem.description}
-						techs={elem.techs}
-						imgUrl={elem.imgUrl}
-						imgAlt={elem.imgAlt}
-						linkedinUrl={elem.linkedinUrl}
-						codeUrl={elem.codeUrl}
-						websiteUrl={elem.websiteUrl}
-					/>
+					<Project key={i} {...elem} />
 				))}
 			</div>
 
