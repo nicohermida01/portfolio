@@ -7,7 +7,7 @@ export async function Navbar() {
 		<header className='w-full bg-[rgba(0,0,0,.6)] fixed top-0 z-10 backdrop-blur'>
 			<div className='w-full max-w-appMWidth mx-auto px-8 py-4 flex items-center justify-between'>
 				<Link href='/' aria-label='Go to home page'>
-					<AppLogo className='w-[30px] h-[30px] sm:w-[18px] sm:h-[18px]' />
+					<AppLogo className='w-[40px] h-[40px] sm:w-[20px] sm:h-[20px]' />
 				</Link>
 
 				<nav>
