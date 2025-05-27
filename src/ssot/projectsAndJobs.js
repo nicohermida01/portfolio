@@ -1,6 +1,6 @@
 export const projectsAndJobs = [
 	{
-		imgUrl: '/autoinspector.jpg',
+		imgUrl: 'autoinspector.jpg',
 		imgAlt: 'Autoinspector page',
 		title: 'Autoinspector',
 		label: 'Job 1',
@@ -10,10 +10,21 @@ export const projectsAndJobs = [
 		linkedinUrl: 'https://www.linkedin.com/company/autoinspectorok/',
 	},
 	{
-		imgUrl: '/farol-game.png',
+		title: 'Bit by Bit',
+		description:
+			'Bit by Bit is a web platform I created with the goal of helping people learn programming step by step. Through a collection of self-written articles, users can explore key programming concepts in a clear and approachable way, without needing prior experience.',
+		imgUrl: 'bitbybit.jpg',
+		imgAlt: 'Bit by Bit page',
+		techs: ['Astro', 'React', 'Tailwind CSS', 'Markdown'],
+		label: 'Project 1',
+		websiteUrl: 'https://bit-by-bit-theta.vercel.app/',
+		codeButtonPrimary: true,
+	},
+	{
+		imgUrl: 'farolgame.jpg',
 		imgAlt: 'Farol Game Image',
 		title: 'Farol Game',
-		label: 'Project 1',
+		label: 'Project 2',
 		description:
 			'Farol Game is a platform videogame where the player must defeat the enemies and reach the end of the level.',
 		techs: ['Unity', 'C#', 'Blender', 'Figma', 'Illustrator'],
@@ -21,10 +32,10 @@ export const projectsAndJobs = [
 		codeButtonPrimary: true,
 	},
 	{
-		imgUrl: '/futball-league.jpg',
+		imgUrl: 'futballleague.jpg',
 		imgAlt: 'Futball league page',
 		title: 'Futball League',
-		label: 'Project 2',
+		label: 'Project 3',
 		description:
 			'Futball League is a web application that allows you to easily access the latest match results from various leagues and competitions around the world.',
 		techs: ['Nextjs', 'TypeScript', "API's", 'Styled components'],
@@ -32,20 +43,20 @@ export const projectsAndJobs = [
 		websiteUrl: 'https://futball-league.vercel.app/',
 	},
 	{
-		imgUrl: '/fast-news.jpg',
+		imgUrl: 'fastnews.jpg',
 		imgAlt: 'Fast News page',
 		title: 'Fast News',
-		label: 'Project 3',
+		label: 'Project 4',
 		description:
 			"With Fast News, you'll be able to instantly access the latest news from around the world.",
 		techs: ['Nextjs', 'TypeScript', "API's", 'Styled components'],
 		codeUrl: 'https://github.com/nicohermida01/fast-news',
 	},
 	{
-		imgUrl: '/quick-qr.jpg',
+		imgUrl: 'quickqr.jpg',
 		imgAlt: 'Quick QR page',
 		title: 'Quick QR',
-		label: 'Project 4',
+		label: 'Project 5',
 		description:
 			'Quick QR allows you to convert the URL you provide into a QR code, which can be scanned and shared.',
 		techs: ['HTML', 'CSS', 'JavaScript'],
@@ -53,18 +64,7 @@ export const projectsAndJobs = [
 		websiteUrl: 'https://nicohermida01.github.io/qr-code-generator/',
 	},
 	{
-		imgUrl: '/noob-dev.jpg',
-		imgAlt: 'Noob Dev page',
-		title: 'Noob Dev | Listas Enlazadas',
-		label: 'Project 5',
-		description:
-			'At Noob Dev, you will find information and hands-on exercises on a wide range of programming concepts taught at the university level.',
-		techs: ['HTML', 'CSS', 'JavaScript'],
-		codeUrl: 'https://github.com/nicohermida01/linked-list',
-		websiteUrl: 'https://nicohermida01.github.io/linked-list/',
-	},
-	{
-		imgUrl: '/scrabblear.jpg',
+		imgUrl: 'scrabblear.jpg',
 		imgAlt: 'ScrabbleAr game',
 		title: 'ScrabbleAR',
 		label: 'Project 6',

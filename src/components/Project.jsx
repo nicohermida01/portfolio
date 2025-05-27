@@ -66,7 +66,7 @@ export function Project({
 				</div>
 
 				<Image
-					src={imgUrl}
+					src={`/images/${imgUrl}`}
 					alt={imgAlt}
 					width={630}
 					height={360}
