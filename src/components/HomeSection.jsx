@@ -12,6 +12,7 @@ import { NestjsIcon } from 'components/icons/NestjsIcon'
 import { MongoDBIcon } from 'components/icons/MongoDBIcon'
 import { SendIcon } from 'components/icons/SendIcon'
 import { ScrollDownIcon } from 'components/icons/ScrollDownIcon'
+import { CV_FILE_PATH } from 'constants/assets'
 
 const iconClassName = 'w-[50px] h-[50px] sm:w-[24px] sm:h-[24px]'
 
@@ -34,7 +35,7 @@ export function HomeSection() {
 					</Link>
 
 					<Link
-						href='/RESUME-nicolas-hermida.pdf'
+						href={CV_FILE_PATH}
 						aria-label='Download my curriculum'
 						target='_blank'
 						className='border-GRAY_1 border-2 px-6 py-3 rounded-3xl defaultTransition hover:border-GRAY_1HOVER'
